@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车-花礼网</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 优化 -->
+	<link rel="stylesheet" type="text/css" href="style/base.css">
+	<link rel="stylesheet" type="text/css" href="style/cart_goods.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript">
+		window.onload=init;
+		function init(){
+			// var h1=document.body.offsetHeight;//页面高度
+			// var h2=document.documentElement.clientHeight;//body区域内容的高度
+			// var h=h1>h2?h1:h2;
+			// $('#mask').css("height",h+"px");
+			$('.balance').click(function(){
+				$("#tc").show();
+				$("html,body").addClass("mask")
+				return false;//阻止页面刷新
+			});
+			$("#cloce").click(function(){
+				$("#tc").hide();
+				$("html,body").removeClass("mask")
+			});
+
+			$(".register").click(function(){
+				$(".login_box").hide();
+				$(".register_box").show();
+			});
+			$(".login").click(function(){
+				$(".register_box").hide();
+				$(".login_box").show();
+			});
+
+
+			// 购物车实现加减
+			$('.add').click(function(){
+				var num=$(this).siblings('.n').val();
+				$(this).siblings('.n').val(parseInt(num)+1);
+			});
+
+			$('.minus').click(function(){
+				var num=$(this).siblings('.n').val();
+				if(num=='1'){
+					$(this).siblings('.n').val(parseInt(num));
+				}else{
+					$(this).siblings('.n').val(parseInt(num)-1);
+					// var _mon='¥'+($('.n').val()*univalent).toFixed(2);
+				}				
+			});
+
+			// 实现购物车删除
+			$('.delete').click(function(){
+				$(this).parent().parent().remove();//parent父亲
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- 顶部导航 -->
+	<div id="top_nav">
+		<div class="top_nav w1">
+			<!-- 顶部导航左侧部分开始 -->
+			<ul class="nav_l">
+				<li><a href="#"><span class="ico_star"></span>收藏鲜花网</a></li>
+				<li><a href="#" class="wt"><span class="ico_weixin"></span>关注微信</a>
+					<!-- 二级菜单 -->
+					<div class="tbox weixin">
+						<img src="images/wechat_qrcode.jpg">
+						<p>扫码关注<br>回复"礼物" 更多惊喜！</p>
+					</div>
+				</li>
+				<li><a href="#" class="wt"><span class="ico_tel"></span>手机花礼</a>				
+					<!-- 二级菜单 -->
+					<div class="tbox tel">
+						<img src="images/app_qrcode.jpg">
+						<p>新人专享100元大礼包</p>
+					</div>
+				</li>
+			</ul>
+			<!-- 顶部导航左侧部分结束 -->
+
+			<!-- 顶部导航右侧部分开始 -->
+			<ul class="nav_r fr">
+				<li class="nav_login"><a href="#">你好，请登录</a></li>
+				<li class="line">|</li>
+				<li class="nav_register"><a href="#">注册</a></li>
+				<li class="line">|</li>
+				<li class="nvv_order"><a href="#">订单查询</a></li>
+				<li class="line">|</li>
+				<li class="nav_cs"><a href="#" class="a_cs">客户服务<i class="iconfont">&#xe635;</i></a>
+					<!-- 弹出菜单 -->
+					<div class="cs_submenu">
+						<a href="#">在线付款</a>
+						<a href="#">帮助中心</a>
+						<a href="#">售后服务</a>
+						<a href="#">配送范围</a>
+						<a href="#">留言反馈</a>
+					</div>
+				</li>
+				<li class="line">|</li>
+				<li class="nav_cart"><a href="#"><i class="cart"></i>购物车<span>(2)</span><i class="iconfont">&#xe635;</i></a>
+					<!-- 弹出菜单 -->
+					<div class='cart_submenu'>
+						<div class="cartsubmenu_con">
+							<img src="images/9010966.jpg_80x87.jpg">
+							<a href="#">一往情深—精品玫瑰礼盒:19枝红玫瑰，勿忘我适量</a>
+							<span>1</span>
+							<i class="price">￥239</i>
+						</div>
+						<div class="cartsubmenu_con">
+							<img src="images/9010011.jpg_80x87.jpg">
+							<a href="#">一心一意—玫瑰11枝，粉色勿忘我0.3扎</a>
+							<span>1</span>
+							<i class="price">￥126</i>
+						</div>
+						<div class="qjs">
+							<span><i>2</i> 件总计:<b>¥ 365</b></span>
+							<a href="#">去购物车结算</a>
+						</div>
+					</div>
+				</li>
+				<li class="line">|</li>
+				<li><p>中国鲜花礼品网:中国鲜花网领先品牌</p></li>
+			</ul>	
+			<!-- 顶部导航右侧部分结束 -->		
+		</div>
+	</div>
+	<!-- 顶部导航结束 -->
+
+	<!-- logo 开始 -->
+	<div id="header">
+		<div class="header w1">
+			<div class="logo fl">
+				<h1><a href="#"><img src="images/logo.png"></a></h1>
+				<i></i>
+				<h2></h2>
+			</div>
+			<div class="cotact">
+				<i class="tel"></i>
+				<p>400-889-8188</p>
+				<i class="line"></i>
+				<i class="tel_inline"></i>
+				<a href="#">在线客服</a>
+			</div>			
+		</div>
+	</div>
+	<!-- logo 结束 -->
+
+	<!-- 商品信息 开始 -->
+	<div id="detail">
+		<div class="detail w1">
+			<ul class="detail_title">
+				<li><h2>商品信息</h2></li>
+				<li><h2>市场价</h2></li>
+				<li><h2>订购价</h2></li>
+				<li><h2>数量</h2></li>
+				<li><h2>操作</h2></li>
+			</ul>
+			<div id="detail_con">
+				<div class="detail_con">
+					<img src="images/9010966.jpg_80x87.jpg">
+					<h3>[鲜花]一往情深一精品玫瑰礼盒:19枝红玫瑰，勿忘我适量</h3>
+					<span class="market_price">￥329</span>
+					<span class="order_price">￥239</span>
+					<div class="num">
+						<a href="#" class="minus">-</a>
+						<input class="n" type="text" name="" value="1">
+						<a href="#" class="add">+</a>
+					</div>
+					<div class="handle">
+						<a href="#" class="delete">删除</a><br>
+						<a href="#" class="move_mycon">移到我的关注</a>
+					</div>			
+				</div>
+				<div class="detail_con">
+					<img src="images/9010011.jpg_80x87.jpg">
+					<h3>[鲜花]一心一意一玫瑰11枝，粉色勿忘我0.3扎</h3>
+					<span class="market_price">￥156</span>
+					<span class="order_price">￥126</span>
+					<div class="num">
+						<a href="#" class="minus">-</a>
+						<input class="n" type="text" name="" value="1">
+						<a href="#" class="add">+</a>
+					</div>
+					<div class="handle">
+						<a href="#" class="delete">删除</a><br>
+						<a href="#" class="move_mycon">移到我的关注</a>
+					</div>			
+				</div>		
+			</div>	
+		</div>
+	</div>
+	<!-- 商品信息 结束 -->
+	<!-- 继续挑选 -->
+	<div id="continue">
+		<div class="continue w1">
+			<i class="arrow"></i>
+			<a href="#" class="choose">继续挑选</a>
+			<a href="#" class="balance fr">去结算</a>
+			<h3 class="fr">应付金额：<span>￥365</span></h3>
+			
+		</div>
+	</div>
+	<!-- 继续挑选 结束 -->
+
+	<!-- 点击去结算弹出 -->
+	<div id="tc">
+		<div id="mask"></div>
+		<div id="showbox">
+			<p>&nbsp;&nbsp;您还没有登录<span id="cloce" class="iconfont">&#xe642;</span></p>
+			<div class="login_box">
+				<div class="login_top">
+					<a href="#" class="login">登录</a>
+					<a href="#" class="register">注册</a>
+				</div>
+				<a href="#" class="login_tel">使用手机验证码登录</a>
+				<form>
+					<div class="login_con">
+						<div class="user"><span></span></div>	
+						<input type="text" name="" placeholder="Email地址/手机号">
+						<div class="pwd"><span></span></div>
+						<input type="password" name="" placeholder="用户密码">
+						<a href="#">忘记密码？</a>
+						<button>登录</button>
+						<ul>
+							<li><a href="#">微信</a></li>
+							<li><a href="#">QQ</a></li>
+							<li><a href="#">支付宝</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+
+			<!-- 注册 -->
+			<div class ="register_box">
+				<div class="register_top">
+					<a href="#" class="login">登录</a>
+					<a href="#" class="register">注册</a>
+				</div>
+				<a href="#" class="register_tel">使用手机号码注册</a>
+				<form>
+					<div class="register_con">
+						<input type="text" name="" placeholder="请填写您的Email地址">
+						<input type="password" name="" placeholder="密码">
+						<input type="password" name="" placeholder="再次输入密码">
+						<input class="yzm" type="text" name="" placeholder="验证码">
+						<img src="images/BaseImageValidCode.jpg">
+						<a href="#">看不清，换一张</a>
+						<button>立即注册</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- （推荐）购买该商品的还购买了 -->
+	<div id="recommend">
+		<div class="recommend w1">
+			<ul class="recommend_title">
+				<li class="current"><a href="#">购买该商品的还购买了</a></li>
+				<li><a href="#">最近浏览</a></li>
+				<li><a href="#">巧克力/花瓶</a></li>
+			</ul>
+			<ul class="recommend_con">
+				<li>
+					<img src="images/gift1.jpg">
+					<a href="#" class="con_d">顺丰包邮/999纯金箔玫瑰+陶瓷花瓶一千足金箔玫瑰 </a>
+					<span>￥132</span>
+					<a href="#" class="add_cart">加入购物车</a>
+				</li>
+				<li>
+					<img src="images/gift2.jpg">
+					<a href="#" class="con_d">顺丰包邮/999纯金箔玫瑰+陶瓷花瓶一千足金箔玫瑰 </a>
+					<span>￥132</span>
+					<a href="#" class="add_cart">加入购物车</a>
+				</li>
+				<li>
+					<img src="images/gift3.jpg">
+					<a href="#" class="con_d">顺丰包邮/999纯金箔玫瑰+陶瓷花瓶一千足金箔玫瑰 </a>
+					<span>￥132</span>
+					<a href="#" class="add_cart">加入购物车</a>
+				</li>
+				<li>
+					<img src="images/gift4.jpg">
+					<a href="#" class="con_d">顺丰包邮/999纯金箔玫瑰+陶瓷花瓶一千足金箔玫瑰 </a>
+					<span>￥132</span>
+					<a href="#" class="add_cart">加入购物车</a>
+				</li>
+				<li>
+					<img src="images/gift5.jpg">
+					<a href="#" class="con_d">顺丰包邮/999纯金箔玫瑰+陶瓷花瓶一千足金箔玫瑰 </a>
+					<span>￥132</span>
+					<a href="#" class="add_cart">加入购物车</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- （推荐）购买该商品的还购买了 end-->
+
+	<!-- 鲜花电商龙头  开始 -->
+	<div class="quality w1">
+		<ul>
+			<li><a href="#"><i class="img1"></i><h4>鲜花电商龙头</h4><p>销量领先，权威认证龙头企业</p></a></li>
+			<li><a href="#"><i class="img2"></i><h4>11年品牌 真实口碑</h4><p>最近评价223916条</p></a></li>
+			<li><a href="#"><i class="img3"></i><h4>鲜花实拍秀展示</h4><p>敢展现送前实拍的鲜花网</p></a></li>
+			<li><a href="#"><i class="img4"></i><h4>3小时送花</h4><p>全国连锁，3小时送1000城市</p></a></li>
+		</ul>
+	</div>
+	<!-- 鲜花电商龙头  结束 -->
+
+	<!-- 底部导航   开始 -->
+	<div class="footer_nav w1">  
+		 <a href="#">首页</a>
+		 <b>|</b>
+		 <a href="#">关于我们</a>
+		 <b>|</b>
+		 <a href="#">媒体报道</a>
+		 <b>|</b>
+		 <a href="#">联系方式</a>
+		 <b>|</b>
+		 <a href="#">企业团购</a>
+		 <b>|</b>
+		 <a href="#">花店加盟</a>
+		 <b>|</b>
+		 <a href="#">在线补款</a>
+		 <b>|</b>
+		 <a href="#">为什么选择中国鲜花礼品网</a>
+	</div>
+
+	<!-- footer   start -->
+	<footer class="w">
+		<div class="picture">
+			<a href="#"><img src="images/footer1.gif"></a>
+			<a href="#"><img src="images/footer2.png"></a>
+			<a href="#"><img src="images/footer3.gif"></a>
+			<a href="#"><img src="images/footer4.png"></a>
+			<a href="#"><img src="images/footer5.gif"></a>
+			<a href="#"><img src="images/foote6.jpg"></a>
+		</div>	
+		<div class="footer_txt">
+		<br><p><a href="#">中国花卉协会会员</a><a href="#">中国电子商务协会会员</a> ICP经营许可证：<a href="#">粤B2-20050744 </a> | <a href="#"> 粤ICP备09171662号 </a>粤公网安备44030502000373号 Copyright © 2005-2017</p>
+		<p>花礼网 （中国鲜花礼品网） <a href="#"> www.hua.com </a> 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家！</p>
+		</div>
+	</footer>
+</body>
+</html>

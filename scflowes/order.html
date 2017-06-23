@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>填写订单-花礼网</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- 优化 -->
+	<link rel="stylesheet" type="text/css" href="style/base.css">
+	<link rel="stylesheet" type="text/css" href="style/order.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/laydate.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript">
+	window.onload=init;
+	function init(){
+
+		$('input[type="text"]').focus(function(){
+		$(this).css('border','1px solid #ff6600');
+		});
+		$('input[type="text"]').blur(function(){
+			$(this).css('border','1px solid #d2d2d2');
+		});
+
+		$('textarea[type="text"]').focus(function(){
+		$(this).css('border','1px solid #ff6600');
+		});
+		$('textarea[type="text"]').blur(function(){
+			$(this).css('border','1px solid #d2d2d2');
+		});
+
+
+	}		
+	</script>
+</head>
+<body>
+	<!-- 顶部导航 -->
+	<div id="top_nav">
+		<div class="top_nav w1">
+			<!-- 顶部导航左侧部分开始 -->
+			<ul class="nav_l">
+				<li><a href="#"><span class="ico_star"></span>收藏鲜花网</a></li>
+				<li><a href="#" class="wt"><span class="ico_weixin"></span>关注微信</a>
+					<!-- 二级菜单 -->
+					<div class="tbox weixin">
+						<img src="images/wechat_qrcode.jpg">
+						<p>扫码关注<br>回复"礼物" 更多惊喜！</p>
+					</div>
+				</li>
+				<li><a href="#" class="wt"><span class="ico_tel"></span>手机花礼</a>				
+					<!-- 二级菜单 -->
+					<div class="tbox tel">
+						<img src="images/app_qrcode.jpg">
+						<p>新人专享100元大礼包</p>
+					</div>
+				</li>
+			</ul>
+			<!-- 顶部导航左侧部分结束 -->
+
+			<!-- 顶部导航右侧部分开始 -->
+			<ul class="nav_r fr">
+				<li class="nav_login"><a href="#">你好，123</a></li>
+				<li class="line">|</li>
+				<li class="nav_register"><a href="#">退出</a></li>
+				<li class="line">|</li>
+				<li class="nvv_order"><a href="#">订单查询</a></li>
+				<li class="line">|</li>
+				<li class="nav_cs"><a href="#" class="a_cs">客户服务<i class="iconfont">&#xe635;</i></a>
+					<!-- 弹出菜单 -->
+					<div class="cs_submenu">
+						<a href="#">在线付款</a>
+						<a href="#">帮助中心</a>
+						<a href="#">售后服务</a>
+						<a href="#">配送范围</a>
+						<a href="#">留言反馈</a>
+					</div>
+				</li>
+				<li class="line">|</li>
+				<li class="nav_cart"><a href="#"><i class="cart"></i>购物车<span>(2)</span><i class="iconfont">&#xe635;</i></a>
+					<!-- 弹出菜单 -->
+					<div class='cart_submenu'>
+						<div class="cartsubmenu_con">
+							<img src="images/9010966.jpg_80x87.jpg">
+							<a href="#">一往情深—精品玫瑰礼盒:19枝红玫瑰，勿忘我适量</a>
+							<span>1</span>
+							<i class="price">￥239</i>
+						</div>
+						<div class="cartsubmenu_con">
+							<img src="images/9010011.jpg_80x87.jpg">
+							<a href="#">一心一意—玫瑰11枝，粉色勿忘我0.3扎</a>
+							<span>1</span>
+							<i class="price">￥126</i>
+						</div>
+						<div class="qjs">
+							<span><i>2</i> 件总计:<b>¥ 365</b></span>
+							<a href="#">去购物车结算</a>
+						</div>
+					</div>
+				</li>
+				<li class="line">|</li>
+				<li><p>中国鲜花礼品网:中国鲜花网领先品牌</p></li>
+			</ul>	
+			<!-- 顶部导航右侧部分结束 -->		
+		</div>
+	</div>
+	<!-- 顶部导航结束 -->
+
+	<!-- logo 开始 -->
+	<div id="header">
+		<div class="header w1">
+			<div class="logo fl">
+				<h1><a href="#"><img src="images/logo.png"></a></h1>
+				<i></i>
+				<h2></h2>
+			</div>
+			<div class="cotact">
+				<i class="tel"></i>
+				<p>400-889-8188</p>
+				<i class="line"></i>
+				<i class="tel_inline"></i>
+				<a href="#">在线客服</a>
+			</div>			
+		</div>
+	</div>
+	<!-- logo 结束 -->
+
+	<!-- 主体部分 -->
+	<div id="main">
+		<div class="main w1">
+			<div class="fill_order">
+				<h3>填写订单信息</h3>
+
+				<!-- 收货人信息 -->
+				<div class="receiver">
+					<h4>收货人信息<a href="#">新增收货人+</a></h4>	
+					<div class="receiver_con">
+						<div class="current">123
+						<i class="ico_check"></i>
+						</div>
+						<div class="address">
+							<span>123</span>
+							<i>北京</i>
+							<i>东城区</i>
+							<i>tiananmem</i>
+							<i>18345621826</i>
+						</div>
+						<div class="cz">
+							<a href="#">设为默认地址</a>
+							<a href="#">编辑</a>
+							<a href="#">删除</a>
+						</div>
+					</div>									
+				</div>
+
+				<!-- 订购人信息 -->
+				<div class="order_person">
+					<h4>订购人信息</h4>
+					<input type="text" name="" value="123">
+					<input type="text" name="" value="18239498509">
+					<input type="text" name="" placeholder="电子邮箱">
+					<button>确定</button>
+				</div>
+
+				<!-- 送达日期 -->
+				<div class="service_date">
+					<h4>送达日期<span>配送时段</span></h4>
+					<!-- <input type="date" name=""> -->
+					<div id="test1" class="inline laydate-icon" style="width:138px;height: 28px;margin-right: 20px;">2017-5-8</div>
+					<ul>
+						<li class="current">不限<i class="ico_check"></i></li>
+						<li alt="08:30-12:00">上午<div class="time">08:30-12:00</div><div class="white_box"></div></li>
+						<li>下午<div class="time">12:00-18:00</div><div class="white_box"></div></li>
+						<li>晚上<div class="time">18:00-21:00</div><div class="white_box"></div></li>
+						<li>定时<div class="fixedtime">定时服务+30元(非节日)，误差±15分钟</div></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					!function(){
+						laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+						laydate({elem: '#demo'});//绑定元素
+					}();
+					//日期范围限制
+					var start = {
+					    elem: '#start',
+					    format: 'YYYY-MM-DD',
+					    min: laydate.now(), //设定最小日期为当前日期
+					    max: '2099-06-16', //最大日期
+					    istime: true,
+					    istoday: false,
+					    choose: function(datas){
+					         end.min = datas; //开始日选好后，重置结束日的最小日期
+					         end.start = datas //将结束日的初始值设定为开始日
+					    }
+					};
+					var end = {
+					    elem: '#end',
+					    format: 'YYYY-MM-DD',
+					    min: laydate.now(),
+					    max: '2099-06-16',
+					    istime: true,
+					    istoday: false,
+					    choose: function(datas){
+					        start.max = datas; //结束日选好后，充值开始日的最大日期
+					    }
+					};
+					laydate(start);
+					laydate(end);
+					//自定义日期格式
+					laydate({
+					    elem: '#test1',
+					    format: 'YYYY年MM月DD日',
+					    festival: true, //显示节日
+					    choose: function(datas){ //选择日期完毕的回调
+				        alert('得到：'+datas);
+					    }
+					});
+					//日期范围限定在昨天到明天
+					laydate({
+					    elem: '#hello3',
+					    min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+					    max: laydate.now(+1) //+1代表明天，+2代表后天，以此类推
+					});
+				</script>
+
+				<!-- 贺卡留言+署名 -->
+				<div class="card">
+					<h4>贺卡留言+署名</h4>
+					<textarea type="text" name="" placeholder="贺卡留言+署名"></textarea>
+					<br>
+					<span>最多200字，您还可以输入<i> 200 </i>字（仅支持中文，英文）</span>
+				</div>
+
+				<!-- 支付方式 -->
+				<div class="payment">
+					<h4>支付方式</h4>
+					<span class="current">网上支付<i></i><b></b></span>
+					<span>礼品卡支付<i></i></span>
+				</div>
+
+				<!-- 备注 发票 优惠券 -->
+				<ul class="service">
+					<li><input type="checkbox" name=""><label>备注</label></li>
+					<li><input type="checkbox" name=""><label>我要发票</label></li>
+					<li><input type="checkbox" name=""><label>我有优惠券</label></li>
+				</ul>
+			</div>
+
+			<!-- 核对购物清单 -->
+			<div class="check w1">
+				<h3>核对购物清单</h3>
+				<div class="check_con">
+					<img src="images/9010011.jpg_80x87.jpg">
+					<a href="#">一心一意一玫瑰11枝，粉色勿忘我0.3扎</a><br>
+					<span>￥126</span>
+					<i>×1</i>
+				</div>
+				<div class="check_con">
+					<img src="images/9010966.jpg_80x87.jpg">
+					<a href="#">一往情深一精品玫瑰礼盒:19枝红玫瑰，勿忘我适量</a><br>
+					<span>￥239</span>
+					<i>×1</i>
+				</div>
+			</div>
+
+			<!-- 底部提交订单 -->
+			<div class="place_order w1">
+				<div class="price">
+					<i>2件商品，总商品金额： ¥ 365</i><br>
+					<i>配送费： ¥ 0</i><br>
+					<i>实付款：<span> ¥ 365</span></i><br>
+					<a href="#">提交订单</a>
+				</div>				
+				<div class="addr">
+					<p>配送至： 北京 东城区 tiananmem</p><br>
+					<p>收货人：123 18345621826</p>
+				</div>
+				
+			</div>
+		</div>		
+	</div>
+
+	<!-- 鲜花电商龙头  开始 -->
+	<div class="quality w1">
+		<ul>
+			<li><a href="#"><i class="img1"></i><h4>鲜花电商龙头</h4><p>销量领先，权威认证龙头企业</p></a></li>
+			<li><a href="#"><i class="img2"></i><h4>11年品牌 真实口碑</h4><p>最近评价223916条</p></a></li>
+			<li><a href="#"><i class="img3"></i><h4>鲜花实拍秀展示</h4><p>敢展现送前实拍的鲜花网</p></a></li>
+			<li><a href="#"><i class="img4"></i><h4>3小时送花</h4><p>全国连锁，3小时送1000城市</p></a></li>
+		</ul>
+	</div>
+	<!-- 鲜花电商龙头  结束 -->
+
+	<!-- 底部导航   开始 -->
+	<div class="footer_nav w1">  
+		 <a href="#">首页</a>
+		 <b>|</b>
+		 <a href="#">关于我们</a>
+		 <b>|</b>
+		 <a href="#">媒体报道</a>
+		 <b>|</b>
+		 <a href="#">联系方式</a>
+		 <b>|</b>
+		 <a href="#">企业团购</a>
+		 <b>|</b>
+		 <a href="#">花店加盟</a>
+		 <b>|</b>
+		 <a href="#">在线补款</a>
+		 <b>|</b>
+		 <a href="#">为什么选择中国鲜花礼品网</a>
+	</div>
+
+	<!-- footer   start -->
+	<footer class="w">
+		<div class="picture">
+			<a href="#"><img src="images/footer1.gif"></a>
+			<a href="#"><img src="images/footer2.png"></a>
+			<a href="#"><img src="images/footer3.gif"></a>
+			<a href="#"><img src="images/footer4.png"></a>
+			<a href="#"><img src="images/footer5.gif"></a>
+			<a href="#"><img src="images/foote6.jpg"></a>
+		</div>	
+		<div class="footer_txt">
+		<br><p><a href="#">中国花卉协会会员</a><a href="#">中国电子商务协会会员</a> ICP经营许可证：<a href="#">粤B2-20050744 </a> | <a href="#"> 粤ICP备09171662号 </a>粤公网安备44030502000373号 Copyright © 2005-2017</p>
+		<p>花礼网 （中国鲜花礼品网） <a href="#"> www.hua.com </a> 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家！</p>
+		</div>
+	</footer>
+</body>
+</html>

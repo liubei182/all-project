@@ -1,0 +1,34 @@
+		/* css 重置 */
+/*		*{margin:0; padding:0; list-style:none; }
+		body{ background:#fff; font:normal 12px/22px 宋体;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }*/
+
+		/* 本例子css */
+		.slideBox{ width:100%;position:relative;z-index: 101;  }
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; left: 50%;margin-left: -6px; bottom:14px; z-index:99; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left; }
+		.slideBox .hd ul li{ float:left; margin-right:12px;  width:13px; height:13px; line-height:13px;border: 1px solid #597270;border-radius: 50%; text-align:center; background:#597270; cursor:pointer; }
+		.slideBox .hd ul li.on{ background:#fd6600;border: 1px solid #fd6600; color:#fff; }
+		.slideBox .bd{ position:relative; height:100%;z-index: 0; }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; }
+		.slideBox .bd .bd_1 a{display: block;background:  url(../images/xianhua_pc_20170407.jpg) center no-repeat;height: 423px;}
+		.slideBox .bd .bd_2 a{display: block;background:  url(../images/xingzuo_byz_pc.jpg) center no-repeat;height: 423px;}
+		.slideBox .bd .bd_3 a{display: block;background:  url(../images/longtou.jpg) center no-repeat;height: 423px;}
+		.slideBox .bd .bd_4 a{display: block;background:  url(../images/banner_lpk.jpg) center no-repeat;height: 423px;}
+
+		/* 下面是前/后按钮代码，如果不需要删除即可 */
+		.slideBox .prev,
+		.slideBox .next{ position:absolute; left:24%; top:43%; /*margin-top:150px;*/ display:block; width:32px; height:40px; background:url(../images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+		.slideBox .next{ left:auto; right:23%; background-position:8px 5px; }
+		.slideBox .prev:hover,
+		.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+		.slideBox .prevStop{ display:none;  }
+		.slideBox .nextStop{ display:none;  }
+
+		/*banner右侧部分*/
+	 .banner_rightbox{position: absolute; width: 190px;height: 405px;z-index: 102;top:10px;bottom:10px;left: 50%;margin-left: 380px;/*overflow: hidden;*/}
+	 .banner_rightbox .line img{border-top: 1px solid #e4e4e4;border-bottom: 1px solid #e4e4e4;box-sizing: border-box;}
+	 .banner_rightbox img{transition: all ease 0.4s;}
+	 .banner_rightbox a:hover img{transform: translate(-5px,0); /*transform: scale(1.1);*/}
+
