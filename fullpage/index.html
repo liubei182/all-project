@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>永恒婚纱摄影</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css"><!-- 整屏滚动 -->
+	
+	<link rel="stylesheet" type="text/css" href="css/hover-effects.css"><!-- 特色外景 -->
+	<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/css.css"><!-- 特色内景 -->
+	<script type="text/javascript" src="js/ZoomPic.js"></script><!-- 特色内景 -->
+	<script type="text/javascript" src="js/jquery.js"></script><!-- 特色内景 -->
+
+	<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" /><!-- 客片欣赏 -->
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/unslider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/demo.css"><!-- 婚纱礼服 -->
+
+	<link rel="stylesheet" type="text/css" href="css/hover-level.css"><!-- 水平翻转样式 -->
+	 
+	<link rel="stylesheet" type="text/css" href="css/style.css"><!-- 最后一页效果
+ -->
+	<script type="text/javascript">
+		$(function(){
+			$('#box').fullpage({//整屏滚动
+				loopBottom: true,//当滚动到最后一屏时，如果鼠标继续往下滚动的话，就返回到第一屏
+				 //'navigation': true,//显示项目导航
+				 slidesNavigation:true,//显示banner图的项目导向
+				// 'navigationPosition': 'left',
+				// 'navigationTooltips': ['网站首页', '特色内景', '特色外景', '客片欣赏','婚纱礼服','联系我们'],
+				// afterLoad: function(anchorLink, index){//回调函数
+				// 	//滚动到第三屏
+				// 	if(index == 3){
+				// 		$('.section3').find('.img1').fadeIn(1000);
+				// 		$('.section3').find('.img2').fadeIn(2000);
+				// 		$('.section3').find('.img3').fadeIn(2000);
+				// 		$('.section3').find('.img4').fadeIn(2000);
+				// 		$('.section3').find('.img5').fadeIn(2000);
+				// 		$('.section3').find('.img6').delay(500).animate({
+				// 			bottom: '0'
+				// 		}, 1500, 'easeOutExpo');
+				// 			}
+				// 		},
+				// onLeave: function(index, direction){
+				// 	//在离开第三屏的时候执行
+				// 	if(index == '3'){
+				// 		$('.section3').find('.img1').fadeOut(2000);
+				// 		$('.section3').find('.img2').fadeOut(2000);
+				// 		$('.section3').find('.img3').fadeOut(2000);
+				// 		$('.section3').find('.img4').fadeOut(2000);
+				// 		$('.section3').find('.img5').fadeOut(2000);
+				// 		$('.section3').find('.img6').delay(500).animate({
+				// 			bottom: '-150%'
+				// 		}, 1500, 'easeOutExpo');
+				// 	}
+				// },
+				anchors: ['page1', 'page2', 'page3', 'page4','page5','page6','page7'],
+				menu: '#menu'
+			});
+
+			setInterval(function(){//banner轮播
+		        $.fn.fullpage.moveSlideRight();
+		    }, 5000);
+		    new ZoomPic("jswbox"); //特色内景特效
+		});
+	</script>
+</head>
+<body>
+		<nav>
+			<span><img src="images/brand2.png"></span>
+			<ul id="menu">
+				<li data-menuanchor="page1" class="active"><a href="#page1">网站首页</a></li>
+				<li data-menuanchor="page2"><a href="#page2">特色内景</a></li>
+				<li data-menuanchor="page3"><a href="#page3">特色外景</a></li>
+				<li data-menuanchor="page4"><a href="#page4">客片欣赏</a></li>
+				<li data-menuanchor="page5"><a href="#page5">婚纱礼服</a></li>
+				<li data-menuanchor="page6"><a href="#page6">关于永恒</a></li>
+				<li data-menuanchor="page7"><a href="#page7">联系我们</a></li>
+				<li>资讯热线:400-880-1314</li>
+			</ul>
+		</nav>
+<div  id="box">
+	 <header class="section section1">
+		<div id="banner"><!-- 轮播图 -->
+			<img src="images/banner8.jpg" class="slide current">
+			<img src="images/banner10.jpg" class="slide">
+			<img src="images/banner6.jpg" class="slide">
+			<img src="images/banner5.jpg" class="slide">
+		</div>
+	</header>
+	<div class="section section2" style="background:url('images/bg3.jpg') 100%;"><!-- 粉色 rgba(255,192,203,0.3) -->
+		<!-- <h1 class="interior_h">>>特色内景</h1> -->
+		<div id="jswbox">
+		    <pre class="prev">prev</pre>
+		    <pre class="next">next</pre>
+		    <ul>
+		        <li><img src="images/interior-01.jpg" alt="内景1" /><div><a href="#">琴瑟花馨</a></div></li>
+		        <li><img src="images/interior-02.jpg" alt="内景2" /><div><a href="#">爱久弥新</a></div></li>
+		        <li><img src="images/interior-06.jpg" alt="内景3" /><div><a href="#">白色恋人</a></div></li>
+		        <li><img src="images/interior-04.jpg" alt="内景4" /><div><a href="#">情迷咖啡馆</a></div></li>
+		        <li><img src="images/interior-05.jpg" alt="内景5" /><div><a href="#">馨香</a></div></li>
+		        <li><img src="images/interior-03.jpg" alt="内景6" /><div><a href="#">圣心教堂</a></div></li>
+		        <li><img src="images/interior-08.jpg" alt="内景7" /><div><a href="#">秋日童话</a></div></li>
+		    </ul>
+		</div>
+	</div>
+
+	<div class="section section3" style="background:url('images/bg9.jpg') no-repeat center"><!-- 橘黄色 -->
+		<!-- <h1 class="outscene_h">>>特色外景</h1> -->
+		<ul class="outscene_">
+        	<li>
+            	<div class="port-8 effect-3">
+                	<div class="image-box">
+                    	<img src="images/outscene-01.jpg" alt="Image-1" class="img1">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>蓝色大海</h3>
+                        <p>海，爱你的纯洁的清流，海，爱你的神秘的魅力; </p>
+                    	<a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="port-1 effect-1">
+                	<div class="image-box">
+                    	<img src="images/outscene-02.jpg" alt="Image-2" class="img2">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>第一缕阳光</h3>
+                        <p>火红的旭日刚刚透出海平面，给美丽恬静的大海抹上一层玫瑰色。给我们的爱情加温</p>
+                    	<a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+            	<div class="port-8 effect-3">
+                	<div class="image-box">
+                    	<img src="images/outscene-08.jpg" alt="Image-3" class="img3">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>休闲暮日</h3>
+                        <p>生命中的美好，莫过于有你相陪相伴</p>
+                    	<a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </li>
+             <li>
+            	<div class="port-4 effect-3">
+                	<div class="image-box">
+                    	<img src="images/outscene-10.jpg" alt="Image-3" class="img4">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>幽静古道</h3>
+                        <p>在这幽静的路上只有你和我，就像彼此的生命中也只有对方，爱情就是这样，两个人，一辈子</p>
+                    	<a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </li>
+			 <li>
+            	<div class="port-1 effect-2">
+                	<div class="image-box">
+                    	<img src="images/outscene-09.jpg" alt="Image-3" class="img5">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>浪漫紫色</h3>
+                        <p>牵着彼此的手，一起向前走，去我们向往的浪漫的地方，这条路我们两个人就足够了</p>
+                    	<a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </li>
+             <li><!-- style="position: absolute;bottom: 16px;left: 150px;width: 25%" -->
+            	<div class="port-4 effect-3">
+                	<div class="image-box">
+                    	<img src="images/outscene-07.jpg" alt="Image-3" class="img6" style="max-width: 100%; vertical-align: middle;">
+                    </div>
+                    <div class="text-desc">
+                    	<h3>时尚都市</h3>
+                        <p>生活太多忙碌，但幸运的是遇到了你，忙碌的生活也有美好，生活有你在，才不遗憾！</p>
+                    	<a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<div class="section section4" style="background:url('images/bg3.jpg') no-repeat center"><!-- 黄色 -->
+		<!-- <h1 class="guest_h">>>客片欣赏</h1> -->
+		<div class="section3_r">
+			<ul class="accordion">
+				<li> <img src="images/image1.jpg" alt="客片欣赏1" /></li>
+				<li> <img src="images/image2.jpg" alt="客片欣赏2" /> </li>
+				<li> <img src="images/image3.jpg" alt="客片欣赏3" /> </li>
+				<li> <img src="images/image4.jpg" alt="客片欣赏4" /> </li>
+				<li> <img src="images/image5.jpg" alt="客片欣赏5" /></li>
+				<li> <img src="images/image6.jpg" alt="客片欣赏6" /> </li>
+				<li> <img src="images/image7.jpg" alt="客片欣赏7" /> </li>
+				<li> <img src="images/image8.jpg" alt="客片欣赏8" /></li>
+				<li> <img src="images/image9.jpg" alt="客片欣赏9" /></li>
+				<li> <img src="images/image10.jpg" alt="客片欣赏10" /> </li>
+				<li> <img src="images/image11.jpg" alt="客片欣赏11" /> </li>
+				<li> <img src="images/image12.jpg" alt="客片欣赏12" /> </li>
+				<li> <img src="images/image13.jpg" alt="客片欣赏13" /> </li>
+				<li> <img src="images/image14.jpg" alt="客片欣赏14" /> </li>
+				<li> <img src="images/image15.jpg" alt="客片欣赏15" /></li>
+				<li> <img src="images/image16.jpg" alt="客片欣赏16" /> </li>
+				<li> <img src="images/image17.jpg" alt="客片欣赏17" /> </li>
+				<li> <img src="images/image18.jpg" alt="客片欣赏18" /></li>
+			</ul>
+			<script type="text/javascript" src="js/jquery.gridAccordion.min.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$('.accordion').gridAccordion({
+						width: 1250,
+						height: 450,
+						columns: 6,
+						distance: 2,
+						closedPanelWidth: 20,
+						closedPanelHeight: 20,
+						alignType: 'centerCenter',
+						slideshow: true,
+						panelProperties: {
+							0: {
+								captionWidth: 200,
+								captionHeight: 35,
+								captionTop: 30,
+								captionLeft: 30
+								},
+							4: {
+								captionWidth: 150,
+								captionHeight: 100,
+								captionTop: 30,
+								captionLeft: 650
+								},
+							7: {
+								captionWidth: 310,
+								captionHeight: 35,
+								captionTop: 350,
+								captionLeft: 40
+								},
+							8: {
+								captionWidth: 300,
+								captionHeight: 40,
+								captionTop: 150,
+								captionLeft: 35
+									},
+							11: {
+								captionWidth: 150,
+								captionHeight: 120,
+								captionTop: 300,
+								captionLeft: 30
+								},
+							14: {
+								captionWidth: 300,
+								captionHeight: 40,
+								captionTop: 30,
+								captionLeft: 50
+								},
+							16: {
+								captionWidth: 150,
+								captionHeight: 120,
+								captionTop: 150,
+								captionLeft: 10
+								},
+							18: {
+								captionWidth: 300,
+								captionHeight: 40,
+								captionTop: 130,
+								captionLeft: 50
+								}
+						}
+					});
+				});
+			</script>
+		</div>
+	</div>
+	<div class="section section5" style="background:url('images/bg2.jpg') no-repeat center"><!-- 淡青色 -->
+		<!-- <h1 class="dresses_h">>>婚纱礼服</h1> -->
+		<div id="wrap">
+			<ul>
+				<li>
+					<a href="#" class="a1">
+						<img src="images/dresses-06.jpg">
+						<div class ="divA">
+							<p class="p1">甜美公主系列</p>
+							<!-- <p class="p2">浪漫+时尚+罗马假日蜜月旅游！</p>
+							<p class="p3">¥<span>6999</span>起</p> -->
+						</div>
+					</a>
+					<a href="#" class = "a2">
+							<p class="p4">甜美公主系列</p>
+							<p class="p5">浪漫、时尚、精致、不失优雅是本系列礼服的标签，竭力打造甜美公主系列婚纱礼服，每个女孩都是一个美丽的公主。</p>
+							<p class="p6">¥<span>6999</span>起</p>
+							<p class="p7">查看详情></p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a1">
+						<img src="images/dresses-08.jpg">
+						<div class ="divA">
+							<p class="p1">梦幻礼服系列</p>
+						</div>
+					</a>
+					<a href="#" class = "a2">
+							<p class="p4">梦幻礼服系列</p>
+							<p class="p5">每个女孩儿都有一个梦想，希望自己能够拥有一场梦幻般的婚礼，梦幻礼服系列为女孩儿圆梦！</p>
+							<p class="p6">¥<span>7699</span>起</p>
+							<p class="p7">查看详情></p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a1">
+						<img src="images/dresses-07_.jpg">
+						<div class ="divA">
+							<p class="p1">静谧礼服系列</p>
+	
+						</div>
+					</a>
+					<a href="#" class = "a2">
+							<p class="p4">静谧礼服系列</p>
+							<p class="p5">有的女孩儿活泼外向，大大咧咧，但也有的女孩儿温文尔雅，静谧系列的婚纱礼服，给文静的女孩一个完美展现</p>
+							<p class="p6">¥<span>8399</span>起</p>
+							<p class="p7">查看详情></p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a1">
+						<img src="images/dresses-07.jpg">
+						<div class ="divA">
+							<p class="p1">大裙摆系列</p>
+							
+						</div>
+					</a>
+					<a href="#" class = "a2">
+							<p class="p4">大裙摆系列</p>
+							<p class="p5">对一个女孩儿来书，简直就是无裙摆不婚纱，大裙摆系列婚纱简直就是完美，满足你心中婚纱的大裙摆</p>
+							<p class="p6">¥<span>10399</span>起</p>
+							<p class="p7">查看详情></p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$('li').mouseenter(function(){
+				$(this).find('.divA').stop().animate({bottom:'-66px'});
+				$(this).find('.a2').css({left:'0'})
+				$(this).children('.a2').find('.p4').css({left:'0'})
+				$(this).children('.a2').find('.p5').css({left:'0'})
+				$(this).children('.a2').find('.p6').css({transform:'scale(1)'})
+				$(this).children('.a2').find('.p7').css({bottom:'25px'})
+			})
+			$('li').mouseleave(function(){
+				$(this).find('.divA').stop().animate({bottom:'0px'});
+				$(this).find('.a2').css({left:-$(this).width()})
+				$(this).children('.a2').find('.p4').css({left:-$(this).width()})
+				$(this).children('.a2').find('.p5').css({left:-$(this).width()})
+				$(this).children('.a2').find('.p6').css({transform:'scale(1.3)'})
+				$(this).children('.a2').find('.p7').css({bottom:'-50px'})
+			})
+		</script>
+	</div>
+	<div class="section section6" style="background:url('images/bg3.jpg') no-repeat center">
+		<div style="width:100%;margin:40px;">
+			<div id="vertical" class="brand vertical">
+
+				<a target="_blank" href="#">
+					<img alt="" src="images/about1_.jpg" />
+					<div class="info">
+							<h2>--品牌介绍--</h2>
+							<div style="height: 485px;width: 307px;background: url(images/about1.1.jpg);">
+								<span>"永恒"品牌至今已成立10余年之久，经过多年的积累和经验，已经拥有比较完善的婚纱摄影的整个体系，为每一对新婚夫妻提供便捷，关于'永恒'这个词，本意是永远存在，永远不变。对一切美好的事物我们总是希望他们能够永远的保存或者存在,但人类留不住每一个精彩的瞬间，我们品牌的初衷寓意就是留住美好，让所有情侣的爱永恒；'永恒'用相机记录下爱情美好的瞬间，为爱侣们留住永恒！<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯愿：你若安好，便是晴天；你若幸福，便是终点！</span>
+							</div>
+						</div>
+				</a>
+
+				<a target="_blank" href="#"><img lta="" src="images/about4_.jpg" /><div class="info"><h2>--永恒宣言--</h2><div style="width: 307px;height: 485px;background: url(images/about4.1.jpg);"><span>每个女人都是喜欢婚纱的，每个女人的梦里都有一件美仑美奂的婚纱，不论她丑陋俊美，也不论她有没有已过了穿婚纱的时节。婚纱是一段记忆，也是每个女孩子的梦。童话中的公主就是穿着美丽的蓬蓬裙，永远都是最美丽的一面。每个女孩子都有一个梦想，梦想自己永远都是世界的焦点，有一个永远爱护自己的男人。<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的存在就是为了让每个女孩穿上那件属于自己的、量身定做的婚纱，为了这个梦想，我们'永恒'品牌无时无刻不在努力中！</span></div></div></a>
+
+				<a target="_blank" href="#"><img alt="" src="images/about5_.jpg" /><div class="info"><h2>--强势团队--</h2><div style="width: 307px;height: 485px;background: url(images/about5.1.jpg);"><span> 我们是一群热爱传统文化，热爱生活，又热爱摄影的年轻人。我们专注于记录美的瞬间，履行着文化传承的使命。<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;敬业的摄影团队，不断尝试用新的视角去表达意境和表达美。我们用光影，给你一个不一样的你。<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 后期修图团队，不断学习吸取养分，挖掘创作潜能。我们不只给你一个美丽的倩影，更要给你一份特别的意境！<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 华裳还拥有一流的服装研发基地和饰品制作中心，我们崇尚原创，努力创新。为每一位顾客提供最令人满意的服务：</span></div></div></a>
+
+				<a target="_blank" href="#"><img alt="" src="images/about6_.jpg" /><div class="info"><h2>--一站式服务--</h2><div style="height: 485px;width: 307px; background: url(images/about6-level.jpg);"><span>服务范围包含了婚纱摄影、新娘化妆、礼服租售、司仪摄像、场地布置、喜庆布置、爱情电影、花车装扮、婚礼策划真正实现了一站式消费，让每一对新人都可以享受最舒适、最方便的消费环境，在匆忙的婚礼筹备在中更省钱、省心、省力。 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;让复杂的婚礼变得简单，结婚是人生中的大事，婚礼更是必不可少的，花车、礼服、化妆、摄影一个都不能少。永恒婚纱摄影融合了婚纱摄影和知心爱人婚庆团队真正实现了打包式服务，不仅省钱省事更能提高档次。永恒集合了顶级的摄影化妆团队、顶级的婚礼策划师、专职主持人，让婚礼化繁为简。</span></div></div></a>
+			</div>
+		</div>
+			<script type="text/javascript">
+				//品牌翻转
+				var turn = function(target,time,opts){
+
+					target.find('a').hover(function(){
+
+						$(this).find('img').stop().animate(opts[0],time,function(){
+
+							$(this).hide().next().show();
+
+							$(this).next().animate(opts[1],time);
+
+						});
+
+					},function(){
+
+						$(this).find('.info').animate(opts[0],time,function(){
+
+							$(this).hide().prev().show();
+
+							$(this).prev().animate(opts[1],time);
+
+						});
+					});
+				}
+
+				var verticalOpts = [{'width':0},{'width':'304px'}];
+
+				turn($('#vertical'),100,verticalOpts);
+
+			</script>
+	</div>
+	<div class="section section7" style="background:url('images/bg9.jpg') no-repeat center"><!-- 淡青色 -->
+		<!-- <h1 class="contact_h">>>联系我们</h1> -->
+		<ul class="polaroids">
+			<li><a href="#" title="幸福时刻"><img src="images/image1.jpg" alt="Roeland!"></a></li>
+			<li><a href="#" title="见证幸福"><img src="images/image2.jpg" alt="Discussion"></a></li>
+			<li><a href="#" title="幸福时刻"><img src="images/image3.jpg" alt="A Hearty Laugh"></a></li>
+		</ul>
+		<span></span>
+		<div class="contact">
+			<img src="images/tel1.png" class="tel">
+			<img src="images/erweima.jpg" class="erweima">
+			<img src="images/erweima.jpg" class="erweima1">
+			<p class="tel_">幸福热线：<br>400-880-1995</p>
+			<p class="erweima_">官方微博</p>
+			<p class="erweima1_">官方微信</p>
+		</div>
+		<div class="bottom"><p><永恒婚纱摄影>全国连锁著名商标 历经25年把握时代步伐跨越式发展 目前在全国旗下拥有16家直营店 58家加盟店 156家商标授权店 2006家商标使用店 120万客户见证</p>
+		<div>赣ICP备20161228号 </div></div>	
+	</div>
+</div>
+</body>
+</html>

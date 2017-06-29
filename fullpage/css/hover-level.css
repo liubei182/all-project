@@ -1,0 +1,93 @@
+
+*{margin:0;padding:0;list-style-type:none;}
+
+#vertical a,img{border:0;text-decoration:none;}
+
+/*body{font:12px/180% Arial;}*/
+
+.brand a{
+
+	display: block;
+
+	float: left;
+
+	margin-left: 15px;
+	margin-top: 50px;
+
+	width: 304px;
+
+	height: 485px;
+
+	text-align: center;
+
+	position: relative;
+
+}
+
+.brand img{
+
+	width: 304px;
+
+	height: 485px;
+
+}
+
+.brand .info{
+
+	display: none;
+	/*background-color:rgba(211,211,211,1);*/
+	color: #369242;
+}
+.brand .info h2{
+	/*border: 1px solid #fff;*/
+	color: #fff;
+}
+/*.bran .info .linebox{
+	position: absolute;
+	width: 280px;
+	height: 450px;
+	background: red;
+	border: 1px solid #fff;
+}*/
+.brand .info span{
+	display: inline-block;
+	/*width: 300px;
+	border: 1px solid #fff;*/
+	text-indent: 2em;
+	color: #fff;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.vertical .info{
+
+	width: 0;
+
+	height: 485px;
+
+	margin: 0 auto;
+
+}
+
+.horizontal img{
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+}
+
+.horizontal .info{
+
+	width: 180px;
+
+	height: 0;
+
+	top: 120px;
+
+	position: absolute;
+
+	left: 0;
+
+}
