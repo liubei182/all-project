@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<!-- 解决uc浏览器字体变大的问题 -->
+	<meta name="wap-font-scale" content='no'>
+	<!-- 顶部状态条的颜色 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 网站开启对web app程序的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 手机号码不被显示为拨号链接 -->
+	<meta name="format-detection" content="telephone=no,address=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scale=no">
+	<link rel="shortcut icon" href="favicon_white.ico">
+	<link rel="stylesheet" type="text/css" href="style/m_base.css">
+	<link rel="stylesheet" type="text/css" href="style/cart_goods.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {  
+		    $(".menu").on("click",function(){
+			$(".top_nav").toggle();
+			});	
+
+			// 购物车实现加减
+			$('.add').click(function(){
+				var num=$(this).siblings('.n').val();
+				//console.log(parseInt(num)+1);//num的值
+				$(this).siblings('.n').val(parseInt(num)+1);
+
+			});
+
+			$('.minus').click(function(){
+				var num=$(this).siblings('.n').val();
+				if(num=='1'){
+					$(this).siblings('.n').val(parseInt(num));
+				}else{
+					$(this).siblings('.n').val(parseInt(num)-1);
+				}	
+
+			});
+
+
+			// 实现购物车删除
+			$('.ljt').click(function(){
+				$(this).parent().remove();//parent父亲
+			});
+	  	  
+		});  
+	</script>
+</head>
+<body>
+	<header>购物车<i class="iconfont arrow">&#xe63e;</i><i class="iconfont menu">&#xe603;</i></header>
+	<div class="main m_layout">
+		<div class="top_nav">
+			<ul>
+				<li><a href="index.html"><img src="images/shouye.png"><p>首页</p></a></li>
+				<li><a href="category.html"><img src="images/icon3b.png"><p>分类搜索</p></a></li>
+				<li><a href="#"><img src="images/my.png"><p>购物车</p></a></li>
+				<li><a href="my.html"><img src="images/Shopping.png"><p>&nbsp;&nbsp;我的</p></a></li>
+			</ul>
+		</div>
+
+		<div class="main_top">
+			<P>共<span>3</span>件商品</P>
+			<a href="#">去结算</a>			
+		</div>
+		<!-- 第一件商品 -->
+		<div class="goods">
+			<div class="goods_left">
+				<a href="#"><img src="images/9010011.jpg"></a>
+			</div>
+			<div class="goods_right">
+				<a class="flower_name" href="#">[鲜花]一心一意</a>
+				<p class="price">现价 : <span>￥126</span></p>
+				<p class="num">数量 :&nbsp;</p>
+				<p class="buy_num">
+					<span class="iconfont minus">&#xe6a5;</span>
+					<input class="n" type="text" name="" value="1">
+					<span class="iconfont add">&#xe604;</span>
+				</p>
+			</div>			
+			<a class="ljt" href="#"><img src="images/ljt.png"></a>
+			
+		</div>
+		<!-- 第一件商品 end-->
+
+		<!-- 第二件商品 -->
+		<div class="goods">
+			<div class="goods_left">
+				<a href="#"><img src="images/9012144.jpg"></a>
+			</div>
+			<div class="goods_right">
+				<a class="flower_name" href="#">[鲜花]甜美公主</a>
+				<p class="price">现价 : <span>￥126</span></p>
+				<p class="num">数量 :&nbsp;</p>
+				<p class="buy_num">
+					<span class="iconfont minus">&#xe6a5;</span>
+					<input class="n" type="text" name="" value="1">
+					<span class="iconfont add">&#xe604;</span>
+				</p>
+			</div>			
+			<a class="ljt" href="#"><img src="images/ljt.png"></a>		
+		</div>
+		<!-- 第二件商品 end -->
+
+		<!-- 第三件商品 -->
+		<div class="goods">
+			<div class="goods_left">
+				<a href="#"><img src="images/9012042.jpg"></a>
+			</div>
+			<div class="goods_right">
+				<a class="flower_name" href="#">[鲜花]一往情深</a>
+				<p class="price">现价 : <span>￥239</span></p>
+				<p class="num">数量 :&nbsp;</p>
+				<p class="buy_num">
+					<span class="iconfont minus">&#xe6a5;</span>
+					<input class="n" type="text" name="" value="1">
+					<span class="iconfont add">&#xe604;</span>
+				</p>
+			</div>			
+			<a class="ljt" href="#"><img src="images/ljt.png"></a>		
+		</div>
+		<!-- 第三件商品 end -->
+		
+		<!-- 继续挑选 -->
+		<div class="continue">
+			<a href="#"><继续挑选</a>
+			<p>合计：<span>￥368</span></p>
+		</div>
+		<!-- 继续挑选 end -->
+
+		<div class="space"></div>
+
+		<!-- 为你推荐 -->
+		<div class="foryou">
+			<ul class="foryou_nav">
+				<li>为你推荐</li>
+				<li>最近浏览</li>
+				<li>巧克力花瓶</li>
+			</ul>
+			<ul class="foryou_list">
+				<li><a href="#"><img src="images/1061006.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1060002.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1064005.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1065004.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1070011.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1071031.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1083003.jpg_220x240.jpg"></a></li>
+				<li><a href="#"><img src="images/1204009.jpg_220x240.jpg"></a></li>
+			</ul>
+		</div>
+		<!-- 为你推荐 end -->
+	</div>
+	<!-- 底部 -->
+	<div class="bottom">
+		<p>合计：<span>￥234</span></p>
+		<a href="#">去结算</a>
+	</div>
+	<!-- 底部 end -->
+</body>
+</html>

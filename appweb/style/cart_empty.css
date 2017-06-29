@@ -1,0 +1,36 @@
+﻿body{width:100%;height: 25rem;background: #fff;}
+header{width: 100%;height: 1.88rem;background: #ff6600;text-align: center;color: #fff;line-height: 1.88rem;
+	font-size: 0.72rem;font-family: "微软雅黑";}
+header .iconfont{font-size: 0.8rem;}
+header .arrow{float: left;padding-left: 0.2rem;}
+header .menu{float: right;padding-right:0.4rem;}
+
+/*显示隐藏导航菜单*/
+.top_nav{width: 100%;height: 1.96rem;background:#fff;border-bottom: 1px solid #e0e0e0;display: none;}
+.top_nav ul{width: 100%;height: 1.96rem;}
+.top_nav ul li{float: left;width: 25%;height: 1.96rem;margin:0 auto;}
+.top_nav ul li a{display: block;margin-top: 0.2rem;}
+.top_nav ul li img{width: 1.08rem;height: 1rem;margin:0 auto;}
+.top_nav ul li a p{display: block;width: 100%; color: #676767;font-size: 0.4rem;margin-top: 0.1rem;
+	text-align: center;}
+/*显示隐藏导航菜单 end*/
+
+.main{width: 100%;}
+.main .main_up{width: 100%;height:11rem;position: relative;padding-top: 0.4rem;}
+.main .main_up img{position: absolute;width: 9rem;height: 8rem; left: 50%;transform: translateX(-50%);}
+.main .main_up p{position: absolute;bottom:1.4rem;width: 100%; text-align: center;}
+.main .main_up a{position: absolute;bottom: 0rem;display: block;padding:0.2rem 0.4rem;background: #fff;
+	color: #ff6a00;border: 1px solid #ff6a00;left: 50%;transform: translateX(-50%);border-radius: 0.08rem;}
+.main .space{width: 100%;height: 0.32rem;background: #eeeeee;margin-top: 0.4rem;}
+.main .main_down{width: 100%;margin-top: 0.4rem;}
+.main .main_down h3{width: 98%;height: 1.2rem;line-height: 1.2rem;font-weight: normal;margin-left: 0.2rem;}
+.main .main_down ul{width: 98%;height: 4rem; margin-left: 0.2rem;overflow-x: auto;}
+.main .main_down ul li{float: left;width: 33%;margin-left: 0.02rem;}
+.main .main_down ul li img{width: 3rem;margin-left: 50%;transform: translateX(-50%);}
+.main .main_down ul li span{display: block;text-align: center;margin-top:0.2rem;}
+
+.bottom{width: 100%;height: 2rem; background: #fff;position: fixed;bottom: 0;border-top: 1px solid #dddddd;}
+.bottom p{float:left;color: #666666;padding-left: 0.2rem;line-height: 2rem;}
+.bottom p span{color: #ff6600;}
+.bottom a{float: right;display: block; color: #fff;padding:0.2rem 4.8rem;background: #ff6e0d;margin-top: 0.4rem;
+	margin-right: 0.2rem; border-radius: 0.08rem;}

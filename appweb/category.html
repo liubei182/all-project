@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鲜花分类_鲜花频道_中国鲜花礼品网触屏版</title>
+	<meta name="description" content="鲜花分类-中国鲜花礼品网专业提供数百款鲜花花束，花篮，花盒，瓶插花，鲜花礼篮，特色花礼。送花，就上hua.com！中国领先的鲜花速递服务商，最快3小时送达全国1000多个城市。">
+	<meta name="keywords" content="鲜花分类">
+	<!-- 解决uc浏览器字体变大的问题 -->
+	<meta name="wap-font-scale" content='no'>
+	<!-- 顶部状态条的颜色 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 网站开启对web app程序的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 手机号码不被显示为拨号链接 -->
+	<meta name="format-detection" content="telephone=no,address=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scale=no">
+	<link rel="shortcut icon" href="favicon_white.ico">
+	<link rel="stylesheet" type="text/css" href="style/m_base.css">
+	<link rel="stylesheet" type="text/css" href="style/category.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+
+	<!-- 左侧导航 -->
+	<script type="text/javascript">
+		$(document).ready(function(){  
+
+		    $(".left_con li").click(function(){  
+		       $(".left_con li").removeClass("show");
+			   $(this).addClass("show");
+			   
+			   $(".main_right").hide();
+			   $(".main_right:eq(" + $(this).index() + ")").show();
+		    });  
+		  
+		});  
+	</script>
+
+	<!-- 菜单导航 显示隐藏-->
+	<script type="text/javascript">
+		$(document).ready(function() {  
+		    $(".menu").on("click",function(){
+			$(".top_nav").toggle();
+			});		  
+		});  
+	</script>
+</head>
+<body>
+	<!-- 头部搜索 -->
+	<header>
+		<i class="iconfont arrow">&#xe63e;</i>
+		<i class="iconfont menu">&#xe603;</i>
+		<div class="search">
+			<input type="text" name="" placeholder="请输入关键字">
+			<i class="iconfont big">&#xe606;</i>
+		</div>		
+	</header>
+	<!-- 头部搜索 end-->
+
+	<!-- 主题部分 -->
+	<div class="main">
+		<!--显示隐藏导航菜单 -->
+		<div class="top_nav">
+			<ul>
+				<li><a href="index.html"><img src="images/shouye.png"><p>首页</p></a></li>
+				<li><a href="#"><img src="images/icon3b.png"><p>分类搜索</p></a></li>
+				<li><a href="cart_empty.html"><img src="images/Shopping.png"><p>&nbsp;&nbsp;&nbsp;购物车</p></a></li>
+				<li><a href="my.html"><img src="images/my.png"><p>我的</p></a></li>
+			</ul>
+		</div>
+		<!--显示隐藏导航菜单 end-->
+		<!-- 左侧部分 -->
+		<div class="main_left">
+			<ul class="left_con">
+				<li class="show">常用分类</li>
+				<li>鲜花</li>
+				<li>商务鲜花</li>
+				<li>永生花</li>
+				<li>蛋糕</li>
+				<li>巧克力</li>
+				<li>特色礼品</li>
+				<li>品牌公仔</li>
+				<li>礼篮</li>
+				<li>植物花卉</li>
+			</ul>
+		</div>
+		<!-- 左侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/use_banner.png"></a>
+				<h3>常用分类</h3>
+				<ul>
+					<li><a href="#"><img src="images/cy_type (1).png"><span>鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (2).png"><span>永生花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (3).png"><span>商务鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (4).png"><span>蛋糕</span></a></li>
+					<li><a href="#"><img src="images/cy_type (5).png"><span>品牌公仔</span></a></li>
+					<li><a href="#"><img src="images/cy_type (6).png"><span>巧克力</span></a></li>
+					<li><a href="#"><img src="images/cy_type (7).png"><span>礼篮</span></a></li>
+					<li><a href="#"><img src="images/cy_type (8).png"><span>特色礼品</span></a></li>
+					<li><a href="#"><img src="images/cy_type (9).png"><span>绿植花卉</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/12171.png"></a>
+				<h3>用途</h3>
+				<ul>
+					<li><a href="#"><img src="images/repayteacher.png"><span>回报老师</span></a></li>
+					<li><a href="#"><img src="images/aiqing.png"><span>爱情鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (3).png"><span>永生花</span></a></li>
+					<li><a href="#"><img src="images/aisi.png"><span>哀思鲜花</span></a></li>
+					<li><a href="#"><img src="images/baihe.png"><span>马蹄莲</span></a></li>
+					<li><a href="#"><img src="images/birthday.png"><span>生日鲜花</span></a></li>
+					<li><a href="#"><img src="images/youqing.png"><span>友情鲜花</span></a></li>
+					<li><a href="#"><img src="images/daoqian.png"><span>道歉鲜花</span></a></li>
+					<li><a href="#"><img src="images/zhangbei.png"><span>长辈鲜花</span></a></li>
+				</ul>
+				<h3 class="data_flower">花材</h3>
+				<ul>
+					<li><a href="#"><img src="images/rose.png"><span>玫瑰</span></a></li>
+					<li><a href="#"><img src="images/fulang.png"><span>扶郎</span></a></li>
+					<li><a href="#"><img src="images/pinkrose.png"><span>粉玫瑰</span></a></li>
+					<li><a href="#"><img src="images/purplerose.png"><span>紫玫瑰</span></a></li>
+					<li><a href="#"><img src="images/redrose.png"><span>红玫瑰</span></a></li>
+					<li><a href="#"><img src="images/xiangrikui.png"><span>向日葵</span></a></li>
+					<li><a href="#"><img src="images/whiterose.png"><span>白玫瑰</span></a></li>
+					<li><a href="#"><img src="images/xiangbinrose.png"><span>香槟玫瑰</span></a></li>
+					<li><a href="#"><img src="images/yellowrose.png"><span>黄玫瑰</span></a></li>
+				</ul>
+				<h3 class="data_flower">类别</h3>
+				<ul>
+					<li><a href="#"><img src="images/sympathy.png"><span>传情花束</span></a></li>
+					<li><a href="#"><img src="images/jingzhihualan.png"><span>精致花篮</span></a></li>
+					<li><a href="#"><img src="images/pingchahua.png"><span>瓶插花</span></a></li>
+					<li><a href="#"><img src="images/tesehuali.png"><span>特色花礼</span></a></li>
+					<li><a href="#"><img src="images/chuangyihuahe.png"><span>创意花盒</span></a></li>
+					<li><a href="#"><img src="images/xianhualilan.png"><span>鲜花礼篮</span></a></li>
+				</ul>
+				<h3 class="data_flower">颜色</h3>
+				<ul class="color">
+					<li><a href="#"><img src="images/color_03.png"><span>传情花束</span></a></li>
+					<li><a href="#"><img src="images/color_05.png"><span>精致花篮</span></a></li>
+					<li><a href="#"><img src="images/color_07.png"><span>瓶插花</span></a></li>
+					<li><a href="#"><img src="images/color_09.png"><span>特色花礼</span></a></li>
+					<li><a href="#"><img src="images/color_11.png"><span>创意花盒</span></a></li>
+					<li><a href="#"><img src="images/color_13.png"><span>鲜花礼篮</span></a></li>
+					<li><a href="#"><img src="images/color_15.png"><span>鲜花礼篮</span></a></li>
+				</ul>
+				<h3 class="data_flower">价格</h3>
+				<ul class="price">
+					<li><a href="#">特价鲜花</a></li>
+					<li><a href="#">150元以下</a></li>
+					<li><a href="#">150-250元</a></li>
+					<li><a href="#">250-350元</a></li>
+					<li><a href="#">350-550元</a></li>
+					<li><a href="#">550-800元</a></li>
+					<li><a href="#">800元以上</a></li>
+				</ul>
+
+				<h3 class="data_flower">枝数</h3>
+				<ul class="num price">
+					<li><a href="#">9枝</a></li>
+					<li><a href="#">10枝</a></li>
+					<li><a href="#">11枝</a></li>
+					<li><a href="#">12枝</a></li>
+					<li><a href="#">16枝</a></li>
+					<li><a href="#">18枝</a></li>
+					<li><a href="#">19枝</a></li>
+					<li><a href="#">20枝</a></li>
+					<li><a href="#">22枝</a></li>
+					<li><a href="#">29枝</a></li>
+					<li><a href="#">33枝</a></li>
+					<li><a href="#">36枝</a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/business_banner.png"></a>
+				<h3>商务鲜花</h3>
+				<ul>
+					<li><a href="#"><img src="images/kaiye.png"><span>开业鲜花</span></a></li>
+					<li><a href="#"><img src="images/huiyixianhua.png"><span>会议鲜花</span></a></li>
+					<li><a href="#"><img src="images/liyixianhua.png"><span>礼仪鲜花</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/ysh_banner.png"></a>
+				<h3>永生花</h3>
+				<ul>
+					<li><a href="#"><img src="images/jingdianhuahe.png"><span>经典花盒</span></a></li>
+					<li><a href="#"><img src="images/juxingmeigui.png"><span>巨型玫瑰</span></a></li>
+					<li><a href="#"><img src="images/xunyicao.png"><span>薰衣草</span></a></li>
+					<li><a href="#"><img src="images/livingflower.png"><span>永生瓶花</span></a></li>
+					<li><a href="#"><img src="images/specialysh.png"><span>特色永生花</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/cake_banner.png"></a>
+				<h3>蛋糕</h3>
+				<ul>
+					<li><a href="#"><img src="images/cy_type (1).png"><span>鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (2).png"><span>永生花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (3).png"><span>商务鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (4).png"><span>蛋糕</span></a></li>
+					<li><a href="#"><img src="images/cy_type (5).png"><span>品牌公仔</span></a></li>
+					<li><a href="#"><img src="images/cy_type (6).png"><span>巧克力</span></a></li>
+					<li><a href="#"><img src="images/cy_type (7).png"><span>礼篮</span></a></li>
+					<li><a href="#"><img src="images/cy_type (8).png"><span>特色礼品</span></a></li>
+					<li><a href="#"><img src="images/cy_type (9).png"><span>绿植花卉</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/chocolate.png"></a>
+				<h3>巧克力</h3>
+				<ul>
+					<li><a href="#"><img src="images/cy_type (1).png"><span>鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (2).png"><span>永生花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (3).png"><span>商务鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (4).png"><span>蛋糕</span></a></li>
+					<li><a href="#"><img src="images/cy_type (5).png"><span>品牌公仔</span></a></li>
+					<li><a href="#"><img src="images/cy_type (6).png"><span>巧克力</span></a></li>
+					<li><a href="#"><img src="images/cy_type (7).png"><span>礼篮</span></a></li>
+					<li><a href="#"><img src="images/cy_type (8).png"><span>特色礼品</span></a></li>
+					<li><a href="#"><img src="images/cy_type (9).png"><span>绿植花卉</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/gift_banner.png"></a>
+				<h3>特色礼品</h3>
+				<ul>
+					<li><a href="#"><img src="images/cy_type (1).png"><span>鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (2).png"><span>永生花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (3).png"><span>商务鲜花</span></a></li>
+					<li><a href="#"><img src="images/cy_type (4).png"><span>蛋糕</span></a></li>
+					<li><a href="#"><img src="images/cy_type (5).png"><span>品牌公仔</span></a></li>
+					<li><a href="#"><img src="images/cy_type (6).png"><span>巧克力</span></a></li>
+					<li><a href="#"><img src="images/cy_type (7).png"><span>礼篮</span></a></li>
+					<li><a href="#"><img src="images/cy_type (8).png"><span>特色礼品</span></a></li>
+					<li><a href="#"><img src="images/cy_type (9).png"><span>绿植花卉</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/doll_banner.png"></a>
+				<h3>品牌公仔</h3>
+				<ul>
+					<li><a href="#"><img src="images/katong.png"><span>神烦狗</span></a></li>
+					<li><a href="#"><img src="images/bestlife.png"><span>Ozland</span></a></li>
+					<li><a href="#"><img src="images/hellokitty.png"><span>Hello Kitty</span></a></li>
+					<li><a href="#"><img src="images/gongzai.png"><span>bestlife</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/baskets_banner.png"></a>
+				<h3>礼篮</h3>
+				<ul>
+					<li><a href="#"><img src="images/cy_type (7).png"><span>礼篮</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+
+		<!-- 右侧部分 -->
+		<div class="main_right" style="display: none;">
+			<div class="right_con">
+				<a href="#" class="banner"><img src="images/plant_banner.png"></a>
+				<h3>植物花卉</h3>
+				<ul>
+					<li><a href="#"><img src="images/lvzhi.png"><span>绿植花卉</span></a></li>
+					<li><a href="#"><img src="images/pengzai.png"><span>盆栽花卉</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 右侧部分 end -->
+	</div>
+	<!-- 主题部分 end-->
+	<!-- 底部导航  开始 -->
+	<div class="nav_bottom">
+		<ul>
+			<li><a href="index.html"><img src="images/home.png"><p>首页</p></a></li>
+			<li><a href="category.html"><img src="images/Class_selected.png"><p>分类</p></a></li>
+			<li><a href="cart_empty.html"><img src="images/Shopping.png"><p>&nbsp;&nbsp;&nbsp;购物车</p></a></li>
+			<li><a href="my.html"><img src="images/my.png"><p>我的</p></a></li>
+		</ul>
+	</div>
+</body>
+</html>

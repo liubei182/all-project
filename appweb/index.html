@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 解决uc浏览器字体变大的问题 -->
+<meta name="wap-font-scale" content='no'>
+<!-- 顶部状态条的颜色 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 网站开启对web app程序的支持 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 手机号码不被显示为拨号链接 -->
+<meta name="format-detection" content="telephone=no,address=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scale=no">
+<title>鲜花网|中国鲜花礼品网-中国鲜花网,鲜花速递,网上送花网站触屏版Hua.com</title>
+<meta name="keywords" content="中国鲜花礼品网触屏版,鲜花,鲜花网,中国鲜花网,鲜花速递,送花网站">
+<meta name="description" content="中国鲜花礼品网(花礼网)Hua.com-中国鲜花网领先品牌,专注鲜花速递服务10年！鲜花网提供24小时订鲜花，同城送花、异地送花服务，最快3小时送花达1000多城市!">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/m_index.css">
+<link rel="shortcut icon" href="favicon.ico">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+
+</head>
+<body>
+	<header>
+		<a href="#"><img src="images/logo.png"></a>
+		<form>
+			<div class="search">
+				<input type="text" name="" placeholder="请输入关键词">
+				<a href="#"><i class="iconfont big">&#xe606;</i></a>
+				<a href="my.html"><i class="iconfont user">&#xe647;</i></a>
+			</div>
+		</form>
+	</header>
+	<div class="m_layout">
+		<!-- banner  start -->
+		<div class="banner">
+			<div id="slideBox" class="slideBox">
+
+				<div class="bd">
+					<ul>
+						<li>
+							<a class="pic" href="#"><img src="images/17jnz_m_01.jpg" /></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/about_banner_m.jpg"/></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/17_nursesday_app.jpg"/></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/xianhua_m_20170407.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});
+			</script>
+		</div>
+
+		<!-- banner  end -->
+
+		<!-- nav  start -->
+		<div class="nav">
+			<a href="#"><img class="serve" src="images/aboutus1.png"></a>
+			<ul class="nav_type">
+				<li><a href="#" class="t1"><span><img src="images/flower_1.png"></span><p>鲜花</p></a></li>
+				<li><a href="#" class="t2"><span><img src="images/cake_2.png"></span><p>蛋糕</p></a></li>
+				<li><a href="#" class="t3"><span><img src="images/flowersong_1.png"></span><p>永生花</p></a></li>
+				<li><a href="#" class="t4"><span><img src="images/gifts_2.png"></span><p>礼品特色</p></a></li>
+				<li><a href="#" class="t5"><span><img src="images/Plant_2.png"></span><p>更多分类</p></a></li>
+			</ul>
+			<div class="space"></div>			
+		</div>
+		<!-- nav  end -->
+
+		<!-- 鲜花网头条  start -->
+		<div class="headline">
+			<div class="brand">
+				<h3>鲜花头条<i class="iconfont">&#xec6b;</i></h3>				
+			</div>
+			<ul class="line">
+				<li><a href="#">送女朋友鲜花，送花卡片写什么？</a></li>
+				<li><a href="#">鲜花枝数与其对应的含义？</a></li>
+				<li><a href="#">女孩子都喜欢别人送花吗？</a></li>
+			</ul>
+
+		</div>
+		<div class="space"></div>	
+		<script src="js/myslideup.js"></script> 
+	  	<script type="text/javascript">
+			$(function(){
+				$(".line").slideUp({
+				  "li_h":1.96,
+				  "dan":"rem",
+				  "time":3000,
+				  "movetime":1000
+				});	
+			});
+		</script>    
+    
+		<!-- 鲜花网头条  end -->
+
+		<!-- 秒杀  开始 -->
+		<div class="second_kill">
+			<div class="time_box">
+				<h3>掌上秒拍</h3>
+				<p class="time" id="bot-box" >距离结束 <span id="hours">00</span> : <span id="minutes">00</span> : <span id="seconds">00</span></p>
+				<a href="#" class="more">更多好礼等你来拿</a>
+			</div>
+
+			<div class="goods_box">
+				<div id="picScroll" class="picScroll">
+					<div class="hd">
+							<span class="next"></span>
+							<ul></ul>
+							<span class="prev"></span>
+							<!-- <h3>多图滑动</h3> -->
+					</div>
+					<div class="bd">
+						<ul>
+							<li><a href="#"><img _src="images/m_kill1 (1).jpg" src="images/m_kill1 (1).jpg" /></a></li>
+							<li><a href="#"><img _src="images/m_kill1 (2).jpg" src="images/m_kill1 (2).jpg" /></a></li>
+							<li><a href="#"><img _src="images/m_kill1 (3).jpg" src="images/m_kill1 (3).jpg" /></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img _src="images/m_kill1 (1).jpg" src="images/m_kill1 (1).jpg" /></a></li>
+							<li><a href="#"><img _src="images/m_kill1 (2).jpg" src="images/m_kill1 (2).jpg" /></a></li>
+							<li><a href="#"><img _src="images/m_kill1 (3).jpg" src="images/m_kill1 (3).jpg" /></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img _src="images/m_kill1 (1).jpg" src="images/m_kill1 (1).jpg" /></a></li>
+							<li><a href="#"><img _src="images/m_kill1 (2).jpg" src="images/m_kill1 (2).jpg" /></a></li>
+							<li><a href="#"><img _src="images/m_kill1 (3).jpg" src="images/m_kill1 (3).jpg" /></a></li>
+						</ul>						
+					</div>
+					<div class="space"></div>	
+				</div>
+				<script type="text/javascript">
+					TouchSlide({ 
+						slideCell:"#picScroll",
+						titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+						autoPage:true, //自动分页
+						pnLoop:"false", // 前后按钮不循环
+						switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+					});
+				</script>
+			</div>			
+		</div>
+
+	<!--seconds_kill  -->     
+  	<script type="text/javascript">
+		var endTime = new Date("2017/6/25,00:00:00");
+		showTime();
+
+		function showTime(){
+			var t;
+			var now = new Date();
+			var diff = (endTime.getTime() - now.getTime())/1000;
+
+			if(diff <= 0){
+				var o = document.getElementById("bot-box");
+				o.style.display="block";
+				//o.style.background="url(images/flash_end.png) no-repeat";
+				o.innerHTML = "秒杀已结束!";
+				clearTimeout(t);
+			}else{
+				var h = parseInt(diff / (60 * 60));
+				var m = parseInt((diff / 60) % 60); //计算剩余分钟
+				var s = parseInt(diff % 60); //计算剩余秒
+
+				if(h < 10){
+					h = "0" + h;
+				}
+				if(m < 10){
+					m = "0" + m;
+				}
+				if(s < 10){
+					s = "0" + s;
+				}
+
+				document.getElementById("hours").innerHTML = h;
+				document.getElementById("minutes").innerHTML = m;
+				document.getElementById("seconds").innerHTML = s;
+
+				t = setTimeout(showTime, 1000);
+			}
+		}
+	</script>   
+	<!-- 秒杀  结束 -->
+
+	<!-- 精品推荐 开始 -->
+	<div class="recommend">
+		<div class="title">
+			<h3>精品推荐</h3>
+			<a href="#">更多></a>
+		</div>
+		<ul>
+			<li><a href="#"><img src="images/xinpin03_m.png"><p class="p1 c_red">新品鲜花速递</p><p class="p2">新款驾到</p></a></li>
+			<li><a href="#"><img src="images/xpsd_06.jpg"><p class="p1 c_pink">美味巧克力</p><p class="p2">最最甜蜜的宠爱</p></a></li>
+			<li><a href="#"><img src="images/mhxh_001.png"><p class="p1 c_yellow">漫画选花</p><p class="p2">浪漫以画代话</p></a></li>
+		</ul>
+		<div class="space"></div>
+	</div>
+		
+	<!-- 精品推荐 结束 -->
+
+	<!-- 热销鲜花  开始 -->
+	<div class="hot_flower">
+		<div class="title">
+			<h3><a href="#">热销鲜花</a></h3>
+			<a href="#">更多></a>
+		</div>
+		<ul>
+			<li><a href="#"><img src="images/9010011_002.jpg"><p class="p1">鲜花/一心一意</p><p class="p2">￥126</p></a></li>
+			<li><a href="#"><img src="images/9010966.jpg"><p class="p1">鲜花/一往情深</p><p class="p2">￥239</p></a></li>
+			<li><a href="#"><img src="images/9010668.jpg"><p class="p1">鲜花/一心一意</p><p class="p2">￥126</p></a></li>
+			<li><a href="#"><img src="images/9012011.jpg"><p class="p1">鲜花/一往情深</p><p class="p2">￥239</p></a></li>
+			<li><a href="#"><img src="images/9012088.jpg"><p class="p1">鲜花/一心一意</p><p class="p2">￥126</p></a></li>
+			<li><a href="#"><img src="images/9012153.jpg"><p class="p1">鲜花/一往情深</p><p class="p2">￥239</p></a></li>
+			<li><a href="#"><img src="images/9012154.jpg"><p class="p1">鲜花/一心一意</p><p class="p2">￥126</p></a></li>
+			<li><a href="#"><img src="images/9012161.jpg"><p class="p1">鲜花/一往情深</p><p class="p2">￥239</p></a></li>
+		</ul>
+		<div class="space"></div>
+	</div>
+	<!-- 热销鲜花  结束 -->
+
+	<!-- 蛋糕  开始 -->
+	<div class="cake">
+		<div class="title">
+			<h3><a href="#">蛋糕</a></h3>
+			<a href="#">更多></a>
+		</div>
+		<img class="cake_banner" src="images/home_nav_01.png">
+		<ul>
+			<li><a href="#"><img src="images/home_nav_002.png"></a></li>
+			<li><a href="#"><img src="images/home_nav_003.png"></a></li>
+			<li class="no_border"><a href="#"><img src="images/home_xfxb_01.png"></a></li>
+			<li><a href="#"><img src="images/home_nav_005.png"></a></li>
+			<li><a href="#"><img src="images/home_nav_006.png"></a></li>
+			<li class="no_border"><a href="#"><img src="images/cake2_11.png"></a></li>
+			<li><a href="#"><img src="images/cake2_8.png"></a></li>
+			<li><a href="#"><img src="images/cake2_9.png"></a></li>
+			<li class="no_border"><a href="#"><img src="images/cake2_10.png"></a></li>
+		</ul>
+		<div class="space"></div>
+	</div>
+	<!-- 蛋糕  结束 -->
+
+	<!-- 特色礼品  开始 -->
+	<div class="gift">
+		<div class="title">
+			<h3><a href="#">特色礼品</a></h3>
+			<a href="#">更多></a>
+		</div>
+		<ul>
+			<li><a href="#"><img src="images/home_nav_008.png"><p>金箔花<br>999金箔玫瑰</p></a></li>
+			<li><a href="#"><img src="images/home_nav_009.png"><p>水晶钢琴<br>送女友最佳礼物</p></a></li>
+			<li><a href="#"><img src="images/teselipin_3_m.png"><p>永生花<br>进口厄瓜多尔玫瑰</p></a></li>
+		</ul>
+		<div class="space"></div>
+	</div>
+	<!-- 特色礼品  结束 -->
+
+	<!-- 鲜花网最近评价 开始 -->
+	<div class="rate">
+		<div class="title">
+			<h3>鲜花网最近评价</h3>
+		</div>
+		<div class="rate_con">
+			<span><img src="images/9010011.jpg"></span>
+			<div class="content">
+				<h3>很满意</h3>
+				<img class="star" src="images/star.png">
+				<p class="p1">qq_220906*</p>
+				<p class="p2">评价：朋友挺满意，我也看到她发来的实物照片，确实跟订单图片一致。</p>
+			</div>
+		</div>
+		<div class="rate_con">
+			<span><img src="images/9010011.jpg"></span>
+			<div class="content">
+				<h3>很满意</h3>
+				<img class="star" src="images/star.png">
+				<p class="p1">qq_220906*</p>
+				<p class="p2">评价：朋友挺满意，我也看到她发来的实物照片，确实跟订单图片一致。</p>
+			</div>
+		</div>
+		<div class="rate_con">
+			<span><img src="images/9010011.jpg"></span>
+			<div class="content">
+				<h3>很满意</h3>
+				<img class="star" src="images/star.png">
+				<p class="p1">qq_220906*</p>
+				<p class="p2">评价：朋友挺满意，我也看到她发来的实物照片，确实跟订单图片一致。</p>
+			</div>
+		</div>
+		<div class="rate_con">
+			<span><img src="images/9010011.jpg"></span>
+			<div class="content">
+				<h3>很满意</h3>
+				<img class="star" src="images/star.png">
+				<p class="p1">qq_220906*</p>
+				<p class="p2">评价：朋友挺满意，我也看到她发来的实物照片，确实跟订单图片一致。</p>
+			</div>
+		</div>
+		<div class="down_box">
+			<a href="#">最近全部商品评价<span>203943</span>条></a>
+		</div>
+	</div>
+	<div class="space"></div>
+
+	<!-- 鲜花网最近评价 结束 -->
+	<!-- 鲜花资讯 -->
+	<div class="flower_infor">
+		<h3>鲜花资讯</h3>
+		<a href="#">送女朋友鲜花，送花卡片写什么？</a>
+		<a href="#">女孩都喜欢别人送鲜花吗？</a>
+		<a href="#">鲜花枝数与其对应的含意</a>
+		<a href="#">通用送花祝福语-经典送花祝福语</a>
+	</div>
+	<div class="space"></div>
+	<!-- 鲜花资讯  end -->
+
+	<!-- 底部banner  开始 -->
+	<div class="bottom_banner">
+		<!-- banner_tab  开始 -->
+		<div class="banner_tab">
+			<ul>
+				<li><img src="images/tab1.jpg"><p class="p1">行业龙头企业</p></li>
+				<li><img src="images/tab12.jpg"><p>11年品牌</p></li>
+				<li><img src="images/tab13.jpg"><p>花艺保障</p></li>
+				<li><img src="images/tab14.jpg"><p>3小时送花</p></li>
+			</ul>
+		</div>
+		<!-- banner start -->
+
+		<div class="banner">
+			<div id="slideBox_bottom" class="slideBox">
+
+				<div class="bd">
+					<ul>
+						<li>
+							<a class="pic" href="#"><img src="images/bottom_banner1.jpg" /></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/bottom_banner2.jpg"/></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/bottom_banner3.jpg"/></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/bottom_banner4.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox_bottom",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});
+			</script>
+		</div>
+	</div>
+	<!-- 底部banner  结束 -->
+
+	<!-- 底部 -->
+	<footer>
+		<div class="botton">
+			<a href="#" class="login">登录</a>
+			<a href="#" class="register">注册</a>
+			<a href="#" class="return_top">返回顶部</a>
+		</div>
+		<div class="help">
+			<ul>
+				<li><a href="#">帮助</a></li>
+				<li>|</li>
+				<li><a href="#">查单</a></li>
+				<li>|</li>
+				<li><a href="#">在线补款</a></li>
+				<li>|</li>
+				<li><a href="#">客服</a></li>
+				<li style="margin-left: 1.6rem;"><a href="#">花语大全</a></li>
+				<li>|</li>
+				<li><a href="#">电脑版</a></li>
+			</ul>
+		</div>		
+		<p>领先的中国鲜花网品牌，鲜花速递专家！<br>&copy; 花礼网(中国鲜花礼品网) m.hua.com</p>
+	</footer>
+</div>
+
+<!-- 底部导航  开始 -->
+<div class="nav_bottom">
+	<ul>
+		<li><a href="#"><img src="images/home_selected.png"><p>首页</p></a></li>
+		<li><a href="category.html"><img src="images/Class.png"><p>分类</p></a></li>
+		<li><a href="cart_empty.html"><img src="images/Shopping.png"><p>&nbsp;&nbsp;&nbsp;购物车</p></a></li>
+		<li><a href="my.html"><img src="images/my.png"><p>我的</p></a></li>
+	</ul>
+</div>
+
+</body>
+</html>

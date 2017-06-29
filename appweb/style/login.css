@@ -1,0 +1,56 @@
+﻿body{width:100%;height: 100%;background: #fff;}
+header{width: 100%;height: 1.88rem;background: #ff6600;text-align: center;color: #fff;line-height: 1.88rem;
+	font-size: 0.72rem;font-family: "微软雅黑";}
+header .iconfont{font-size: 0.8rem;}
+header .arrow{float: left;padding-left: 0.2rem;}
+header .menu{float: right;padding-right:0.4rem;}
+
+.top_nav{width: 100%;height: 2.2rem;background:#fff;border-bottom: 1px solid #e0e0e0;display: none;}
+.top_nav ul{width: 100%;height: 1.96rem;}
+.top_nav ul li{float: left;width: 25%;height: 1.96rem;margin:0 auto;}
+.top_nav ul li a{display: block;margin-top: 0.2rem;}
+.top_nav ul li img{width: 1.08rem;height: 1rem;margin:0 auto;}
+.top_nav ul li a p{display: block;width: 100%; color: #676767;font-size: 0.4rem;margin-top: 0.1rem;
+	text-align: center;}
+
+/*会员登录*/
+.main #member_login .tel_login{display:block;width:100%;height: 1.72rem; text-align: right; padding-right: 0.2rem;
+	color: #ff6a00;line-height: 1.72rem;}
+.main #member_login form input[type=text]{width: 98%;margin-left: 0.2rem;height: 1.6rem;background: #f9f9f9;border:1px solid #e2e2e2;
+	margin-bottom: 0.4rem;font-size: 0.56rem;border-radius: 0.08rem;padding-left: 0.2rem;}
+.main #member_login form input::-webkit-input-placeholder{color: #d2d2d2;}
+#member_login input[type=checkbox]{border: 1px solid #8e8f8f; width: 0.52rem; height: 0.52rem;margin-left: 0.2rem;}
+.main #member_login form label{color: #666666;margin-left: 0.4rem;}
+.main #member_login form button{width: 98%;height:1.6rem;margin-left: 0.2rem;background: #ff6a00;color: #fff;line-height: 1.6rem;
+	text-align: center;border:none;font-size: 0.56rem;margin-top: 0.52rem;
+	cursor: pointer;}
+/*手机登录*/
+.main #tel_login{width: 100%;height: auto;background: #fff;display: none;}
+.main #tel_login .member_login{display:block;width:100%;height: 1.72rem; text-align: right; padding-right: 0.2rem;
+	color: #ff6a00;line-height: 1.72rem;}
+.main #tel_login input{width: 98%;margin-left: 0.2rem;height: 1.6rem;background: #f9f9f9;border:1px solid #e2e2e2;
+	margin-bottom: 0.4rem;font-size: 0.56rem;border-radius: 0.08rem;padding-left: 0.2rem;}
+.main #tel_login .message{width: 50%;float: left; margin-left: 0.2rem;height: 1.6rem;background: #f9f9f9;border:1px solid #e2e2e2;
+	margin-bottom: 0.4rem;font-size: 0.56rem;border-radius: 0.08rem;padding-left: 0.2rem;}
+.main #tel_login input::-webkit-input-placeholder{color: #d2d2d2;}
+.main #tel_login button[type=get]{width: 47%;height: 1.6rem;background: #ffad0d;
+	margin-left: 0.2rem;text-align: center;line-height: 1.6rem;font-size: 0.56rem;
+	color: #fff;cursor: pointer; margin-top: 0rem;}
+.main #tel_login button{width: 98%;height:1.6rem;margin-left: 0.2rem;background: #ff6a00;color: #fff;line-height: 1.6rem;
+	text-align: center;border:none;font-size: 0.56rem;margin-top: 0.52rem;
+	cursor: pointer;}
+
+
+.main .server{width: 100%;height: 1.4rem;line-height: 1.4rem;}
+.main .server .register{display: inline-block;float: left;padding-left: 0.2rem;}
+.main .server .pwd_return{display: inline-block;float: right;padding-right: 0.2rem;}
+.main .other_login{width: 100%;margin: 0 auto;height: 5rem;background:#fff;}
+.main .other_login .top{width: 90%;margin-left:0.8rem;margin-top: 0.6rem;position: relative;}
+.main .other_login .line{width:100%;height: 0.02rem;background: #dddddd;}
+.main .other_login p{position: absolute;top:-0.6rem;left: 33%; color: #333333;width: 4.56rem;height: 1rem;line-height: 1rem;
+	background: #fff;text-align: center;}
+.main .other_login .down{width: 50%;margin-left: 5rem;margin-top: 1rem;}
+.main .other_login .down a{display:block;float: left;width: 2rem;/*height: 2.64rem;*/margin-right: 1rem;}
+.main .other_login .down a img{width: 2rem;}
+.main .other_login .down a span{width: 2rem;text-align: center;display: block;color: #666666;}
+

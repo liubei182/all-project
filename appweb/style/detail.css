@@ -1,0 +1,145 @@
+body{width:100%;height: 70rem;background: #fff;}
+header{width: 100%;height: 1.88rem;background: #ff6600;text-align: center;color: #fff;line-height: 1.88rem;
+	font-size: 0.72rem;font-family: "微软雅黑";/*position: fixed;*/}
+header .iconfont{font-size: 0.8rem;}
+header .arrow{float: left;padding-left: 0.2rem;}
+header .menu{float: right;padding-right:0.4rem;}
+
+.top_nav{width: 100%;height: 1.96rem;background:#fff;border-bottom: 1px solid #e0e0e0;display: none;}
+.top_nav ul{width: 100%;height: 1.96rem;}
+.top_nav ul li{float: left;width: 25%;height: 1.96rem;margin:0 auto;}
+.top_nav ul li a{display: block;margin-top: 0.2rem;}
+.top_nav ul li img{width: 1.08rem;height: 1rem;margin:0 auto;}
+.top_nav ul li a p{display: block;width: 100%; color: #676767;font-size: 0.4rem;margin-top: 0.1rem;
+	text-align: center;}
+
+.flower{width: 100%;}
+.flower img{width: 6rem;height: 6.64rem;margin:0 auto;}
+.flower p{width: 100%;text-align: center;color: #66483c;}
+.flower_name {width: 100%;border-bottom: 1px solid #e4e4e4;}
+.flower_name a{color: #666666;padding-left: 0.2rem;/*font-size: 0.64rem;*/}
+.flower_name a span{color: #ff6600;}
+.flower_name p{padding-left: 0.2rem;color: #ff6600;/*font-size: 0.96rem;*/}
+/*banner start*/
+.banner{width: 100%;/*height: 9.6rem;*/position: relative;z-index: 1;padding-top: 1.4rem;}
+.slideBox{ position:relative; overflow:hidden; margin:10px auto;  max-width:15rem;/* 设置焦点图最大宽度 */ }
+.slideBox .hd{ position:absolute; height:0.56rem; line-height:0.56rem; bottom:0.2rem;z-index:1; left: 42%; }
+.slideBox .hd li{ display:inline-block; width:0.28rem; height:0.28rem; -webkit-border-radius:50%; -moz-border-radius:50%;
+	 border-radius:50%; background:#fff; text-indent:-9999px; overflow:hidden; margin:0 6px;
+	  box-shadow: 1px 1px 1px #666;}
+.slideBox .hd li.on{ background:#ff6a00;}
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top;
+ 	/*width:100%;*//* 图片宽度100%，达到自适应效果 */}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+/*鲜花banner end*/
+
+
+.detail{width: 100%;margin-top: 0.2rem;}
+.detail p{color: #666666;padding-left: 0.2rem;/*font-size: 0.64rem;*/line-height: 1.04rem;padding-right: 0.2rem;}
+.detail p span{color: #ad923b;}
+
+.more{width:98%;margin:0 auto;border:1px solid #e4e4e4;margin-top: 0.2rem;text-align: center;}
+.more a{line-height: 1.12rem;color: #666666;}
+
+.space{width: 100%;height:0.4rem;background: #f1f1f5;margin-top: 0.2rem;border-top:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;}
+
+/*app专享价*/
+.app{width: 100%;height: 1rem;}
+.app p{margin-left: 0.2rem;background: #ff6600;color: #fff;float: left;margin-top: 0.2rem;text-align: center;}
+.app span{display: inline-block; color: #666666;padding-left: 0.2rem;padding-top: 0.2rem;}
+
+.app .app_right{float: right;padding-right: 0.2rem;width:4rem;border: 1px solid #ff6a00;background: #fff;
+	margin-top: 0.1rem;margin-right: 0.2rem;}
+.app .app_right .iconfont{float: left;display: inline-block;/*padding:0.2rem;*/background: #ff6600;color: #fff;
+	font-size: 0.72rem;}
+.app .app_right a{display:block;padding-top:0.1rem;width:100%;color: #ff6600;text-align: center;}
+
+/*商品评价 开始*/
+.rate{width: 100%;height: 14.6rem;/*background: yellow;*//*border-bottom:1px solid #e5e5e5;*/}
+.rate.title{width: 100%;height: 1.6rem;background: #fff;line-height: 1.6rem;}
+.rate .title h3{padding-left: 0.2rem;color: #666666;font-weight: normal;line-height: 1.6rem;}
+.rate .rate_con{width: 98%;margin-left: 0.2rem;height: 3rem;border-top:1px solid #e5e5e5;}
+.rate .rate_con span{width: 20%;height:2rem;float: left; }
+.rate .rate_con span img{width: 1.6rem;margin-top:0.6rem;border:1px solid #e3e3e3;}
+.rate .rate_con .content{width: 80%;position: relative;float: right;}
+.rate .rate_con .content h3{line-height:1rem;font-weight: normal;color: #666666;}
+.rate .rate_con .content .star{width: 2.96rem;margin-top: 0.8rem;}
+.rate .rate_con .content .p1{position: absolute;right: 0.2rem;top: 0.8rem;color: #cccccc;}
+.rate .rate_con .content .p2{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;line-height: 1rem;
+	padding-right: 0.2rem;color: #999999;}
+.rate .down_box{width: 98%;margin-left: 0.16rem;height: 1.12rem;line-height: 1.12rem;text-align: center;
+	border-top: 1px solid #e3e3e3;}
+.rate .down_box a{color: #ff6600;}
+
+/*订单实拍*/
+.order_show{width: 100%;}
+.order_show .title{width: 100%;height: 1.6rem;background: #fff;line-height: 1.6rem;border-bottom:1px solid #e5e5e5;}
+.order_show .title a h3{display: inline-block; padding-left: 0.2rem;color: #666666;font-weight: normal;
+	line-height: 1.6rem;}
+.order_show .title a span{color:#929292;}
+.order_show .show{width: 100%;}
+.order_show .show ul{height: 6.4rem; margin-left: 2rem;margin-top: 0.2rem;}
+.order_show .show ul li{float: left;width: 3.2rem;overflow: hidden;margin:0.2rem;}
+.order_show .show ul li img{width: 3.2rem;}
+.order_show .show ul li span{color:#5a5a5a;}
+
+/*行业龙头企业*/
+.bottom_banner{width: 100%;height: 12.6rem;/*background: yellow;*/}
+.bottom_banner .banner_tab{width: 100%;height: 2.76rem;}
+.bottom_banner .banner_tab ul{width: 100%;height: 2.16rem;margin-top: 0.4rem;}
+.bottom_banner .banner_tab ul li{width: 25%;height: 2.16rem;float: left;text-align: center;}
+.bottom_banner .banner_tab ul li img{margin: auto;width: 1.8rem;height: 1.8rem;}
+.bottom_banner .banner_tab ul li p{margin-top: 0.2rem;color: #666666;}
+.bottom_banner .banner_tab .p1{color: #ff6a00;}
+
+/*banner start*/
+.bottom_banner .banner{width: 100%;/*height: 9.6rem;*/position: relative;z-index: 1;padding-top: 0.4rem;}
+.bottom_banner .banner .slideBox{ position:relative; overflow:hidden; margin:10px auto;  max-width:15rem;/* 设置焦点图最大宽度 */ }
+.bottom_banner .banner .slideBox .hd{ position:absolute; height:0.56rem; line-height:0.56rem; bottom:0.2rem;z-index:1; left: 42%; }
+.bottom_banner .banner .slideBox .hd li{ display:inline-block; width:0.28rem; height:0.28rem; -webkit-border-radius:50%; -moz-border-radius:50%;
+	 border-radius:50%; background:#fff; text-indent:-9999px; overflow:hidden; margin:0 6px;
+	  box-shadow: 1px 1px 1px #666;}
+.bottom_banner .banner .slideBox .hd li.on{ background:#ff6a00;}
+.bottom_banner .banner .slideBox .bd{ position:relative; z-index:0;overflow: hidden; }
+.bottom_banner .banner .slideBox .bd li{ position:relative; text-align:center;  }
+.bottom_banner .banner .slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top;
+ 	width:100%;/* 图片宽度100%，达到自适应效果 */}
+.bottom_banner .banner .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+/*banner end*/
+
+
+/*加入购物车*/
+.add_cart{width: 100%;height: 3rem;background: #f1f1f5;text-align: center;line-height: 2rem;
+	position: relative;border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+.add_cart a{display: block;color: #fff;background: #fcb465;width: 90%;border-radius: 0.08rem;position: absolute;
+	left: 0.76rem;top: 0.46rem;}
+
+/*底部也许你还喜欢*/
+.bottom{width: 100%;margin-top: 0.2rem;}
+.bottom .title{width: 100%;height: 1rem;}
+.bottom .title span{float: left;padding-left: 0.2rem;color: #666666;}
+.bottom .title a{float: right;padding-right: 0.2rem;color: #666666;}
+.bottom ul{width: 100%;height: 6rem;/*background: yellow;*/}
+.bottom ul li{float: left;width: 33.3%;}
+.bottom ul li img{width: 100%;}
+.bottom ul li a{display: block;color: #ff6600;text-align: center;}
+
+/*底部固定*/
+footer{width: 100%;background: #fff;height: 2rem;margin-top: 0.6rem;position: fixed;bottom: 0;z-index: 2;
+	border-top: 1px solid #e4e4e4;}
+footer .serve{width: 50%;float: left;margin-top: 0.34rem;}
+footer .serve li{width: 33.33%;float: left;margin:0 auto;}
+footer .serve li a{display: block;}
+footer .serve li img{width:0.94rem;margin-left: 50%;transform: translateX(-50%);}
+footer .serve li span{display: block; width: 100%;text-align: center;color: #6e6e6e;}
+
+footer .buy{width: 50%;float: right;}
+footer .buy li{width: 50%;float: left;line-height: 2rem;text-align: center;}
+footer .buy li a{color: #fff;}
+footer .buy li:first-child{background: #fcb465;}
+footer .buy li:last-child{background: #fe6600;}
+
+

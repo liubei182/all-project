@@ -1,0 +1,54 @@
+﻿body{width:100%;/*height: 24.68rem;*/background: #fff;}
+header{width: 100%;height: 1.88rem;background: #ff6600;text-align: center;color: #fff;line-height: 1.88rem;
+	font-size: 0.72rem;font-family: "微软雅黑";}
+header .iconfont{font-size: 0.8rem;}
+header .arrow{float: left;padding-left: 0.2rem;}
+header .menu{float: right;padding-right:0.4rem;}
+
+/*显示隐藏导航*/
+.top_nav{width: 100%;height: 2.2rem;background:#fff;border-bottom: 1px solid #e0e0e0;display: none;}
+.top_nav ul{width: 100%;height: 1.96rem;}
+.top_nav ul li{float: left;width: 25%;height: 1.96rem;margin:0 auto;}
+.top_nav ul li a{display: block;margin-top: 0.2rem;}
+.top_nav ul li img{width: 1.08rem;height: 1rem;margin:0 auto;}
+.top_nav ul li a p{display: block;width: 100%; color: #676767;font-size: 0.4rem;margin-top: 0.1rem;
+	text-align: center;}
+/*显示隐藏导航 end*/
+
+.main .tel_register .way{width: 98%;height:1.2rem;margin-left: 0.16rem;border:1px solid #fe6c6c;margin-top: 0.28rem;border-radius: 0.08rem;}
+.main .tel_register .way li{width: 50%;height: 1.2rem;float: left;text-align: center;line-height: 1.2rem;}
+.main .tel_register .way .way_tel{background: #fe6c6c;color: #fff;}
+.main .tel_register form{width: 98%;margin-left: 0.16rem;margin-top: 0.64rem;/*position: relative;*/}
+.main .tel_register form input{width: 100%;height: 1.6rem;border:1px solid #e2e2e2;margin-bottom: 0.4rem;font-size: 0.56rem;
+	padding-left: 0.2rem;border-radius: 0.08rem;background: #f9f9f9;}
+.main .tel_register .yz_code{width: 100%;position: relative;height: 1.6rem;}
+.main .tel_register form img{position: absolute;right: 0.2rem;width: 2.72rem; height: 1.12rem;top: 15%;border-left: 1px solid #e2e2e2;}
+.main .tel_register form .message{width: 48%;float: left;margin-top: 0.4rem;}
+.main .tel_register form .m_btn{width: 48%;height: 1.6rem;color: #ff6a00;font-size: 0.56rem;background: #fff;outline: none;
+	border:1px solid #ff6a00; float: right;border-radius: 0.08rem;margin-top: 0.4rem;}
+.main .tel_register .next_btn{width: 98%;height: 1.68rem; margin-left: 0.16rem;margin-top: 0.64rem;border:none;background: #ff6a00;
+	color: #fff;font-size: 0.56rem;border-radius: 0.08rem;margin-bottom: 0.6rem;outline: none;}
+
+/*邮箱注册*/
+.main .mail_register{display: none;}
+.main .mail_register .way{width: 98%;height:1.2rem;margin-left: 0.16rem;border:1px solid #fe6c6c;margin-top: 0.28rem;border-radius: 0.08rem;}
+.main .mail_register .way li{width: 50%;height: 1.2rem;float: left;text-align: center;line-height: 1.2rem;}
+.main .mail_register .way_mail{background: #fe6c6c;color: #fff;}
+.main .mail_register form{width: 98%;margin-left: 0.16rem;margin-top: 0.64rem;/*position: relative;*/}
+.main .mail_register .yz_code{width: 100%;position: relative;height: 1.6rem;margin-bottom: 0.4rem;}
+.main .mail_register form img{position: absolute;right: 0.2rem;width: 2.72rem; height: 1.12rem;top: 15%;border-left: 1px solid #e2e2e2;}
+.main .mail_register form input{width: 100%;height: 1.6rem;border:1px solid #e2e2e2;font-size: 0.56rem;
+	padding-left: 0.2rem;border-radius: 0.08rem;background: #f9f9f9;}
+.main .mail_register form .pwd{width: 100%;float: left;margin-top: 0.4rem;}
+.main .mail_register form .m_btn{width: 48%;height: 1.6rem;color: #ff6a00;font-size: 0.56rem;background: #fff;outline: none;
+	border:1px solid #ff6a00; float: right;border-radius: 0.08rem;margin-top: 0.4rem;}
+.main .mail_register .next_btn{width: 98%;height: 1.68rem; margin-left: 0.16rem;margin-top: 0.64rem;border:none;background: #ff6a00;
+	color: #fff;font-size: 0.56rem;border-radius: 0.08rem;margin-bottom: 0.6rem;outline: none;}
+/*.main .mail_register .switchbtn{display: block;width: 2.88rem;height:1.6rem;
+	background: url(../images/switchbtn.png) no-repeat 0 0;margin-top: -1.6rem;
+	position: relative;z-index: 10;float: right;margin-right: 0.4rem;}
+.main .mail_register .switchbtn1{display: block;width: 2.88rem;height:1.6rem;
+	background: url(../images/switchbtn.png) no-repeat -2.88rem 0;margin-top: -1.6rem;
+	position: relative;z-index: 10;float: right;margin-right: 0.4rem;display: none;}*/
+
+.main .pwd_return p{ margin-left: 0.16rem;text-decoration: underline;height: 1rem;}

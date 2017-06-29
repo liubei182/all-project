@@ -1,0 +1,71 @@
+﻿body{width:100%;height: 25rem;background: #fff;}
+header{width: 100%;height: 1.88rem;background: #ff6600;text-align: center;color: #fff;line-height: 1.88rem;
+	font-size: 0.72rem;font-family: "微软雅黑";}
+header .iconfont{font-size: 0.8rem;}
+header .arrow{float: left;padding-left: 0.2rem;}
+header .menu{float: right;padding-right:0.4rem;}
+.main .main_top{width: 100%;height: 1.48rem;background: #f4f4f4;border-top: 1px solid #e4e4e4;margin-top: 0.32rem;
+	border-bottom: 1px solid #e4e4e4;}
+.main .main_top>p{float: left;padding-left: 0.2rem;line-height: 1.48rem;color: #ff6600;}
+.main .main_top>a{float: right;margin-right: 0.2rem;background: #ff6600;border-radius: 0.08rem;color: #fff;
+	padding:0.2rem 0.4rem;margin-top: 0.2rem;}
+
+.top_nav{width: 100%;height: 2rem;background:#fff;border-bottom: 1px solid #e0e0e0;display: none;}
+.top_nav ul{width: 100%;height: 1.96rem;}
+.top_nav ul li{float: left;width: 25%;height: 1.96rem;margin:0 auto;}
+.top_nav ul li a{display: block;margin-top: 0.2rem;}
+.top_nav ul li img{width: 1.08rem;height: 1rem;margin:0 auto;}
+.top_nav ul li a p{display: block;width: 100%; color: #676767;font-size: 0.4rem;margin-top: 0.1rem;
+	text-align: center;}
+
+/*第一件商品*/
+.main .goods{width: 100%;height:3rem;/*background: red;*/margin-top: 0.2rem; color: #666666;position: relative;
+	border-bottom:1px solid #dcdcdc;}
+.main .goods .goods_left{width: 10%;position: absolute;left: 0;}
+.main .goods .goods_left a{display: block;width:100%;height: 100%;}
+.main .goods .goods_left a img{width: 1.6rem;height: 1.74rem; padding-top: 0.4rem;padding-left: 0.2rem;}
+
+.main .goods .goods_right{margin-left: 2rem;line-height: 0.6rem;}
+.main .goods .goods_right .flower_name{color: #666666;line-height: 0.8rem;}
+.main .goods .goods_right .price{display: block;line-height: 0.8rem;}
+.main .goods .goods_right .price>span{color: #ff6600;}
+.main .goods .goods_right .num{display: inline-block;height: 1rem;line-height: 1rem;float: left;}
+.main .goods .goods_right .buy_num span{display: inline-block; width: 0.96rem;height: 1rem;border:1px solid #dcdcdc;
+	line-height: 1rem;text-align: center;background: #fff;}
+.main .goods .goods_right .buy_num .iconfont{font-size: 0.56rem;color: #707070;}
+.main .goods .goods_right .buy_num .minus{float: left;cursor: pointer;}
+.main .goods .goods_right .buy_num input{width: 1.28rem;height: 1rem;border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;outline: none;float: left;text-align: center;font-size: 0.48rem;
+	color: #707070;}
+.main .goods .goods_right .buy_num .add{cursor: pointer;}	
+
+.main .goods .ljt{position: absolute;right: 0;top: 15%;padding-right: 0.4rem;}
+.main .goods .ljt img{width: 0.6rem;height: 0.6rem;}
+
+
+.main .continue{width: 98%;height: 1.52rem;background: #fffcf1;margin-top: 0.4rem;border: 1px solid #ddd4c7;
+	line-height: 1.52rem;border-radius: 0.08rem;margin-left: 0.2rem;}
+.main .continue a{float:left;color: #666666;padding-left: 0.2rem;}
+.main .continue p{float: right;color: #666666;padding-right: 0.2rem;}	
+.main .continue p span{color: #ff6600;}
+
+.main .space{width: 100%;height: 0.52rem;background: #f1f1f5;border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;margin-top: 0.8rem;}
+
+/*为你推荐*/
+.main .foryou{width: 100%;margin-top: 0.24rem;}
+.main .foryou .foryou_nav{width: 100%;color: #666666;padding-bottom: 0.4rem;}
+.main .foryou .foryou_nav li{float: left;padding:0 0.7rem;}
+.main .foryou .foryou_nav li:nth-child(1){color: #ff6600;}
+.main .foryou .foryou_nav li+li:before{content: "|";padding-right:1.54rem;color: #dbdbdb;}
+
+.main .foryou .foryou_list{width: 100%;height: 3rem; margin-top: 1rem;overflow-x:auto;}
+.main .foryou .foryou_list li{width:3.6rem;float: left;}
+.main .foryou .foryou_list li img{width: 2.56rem;height: 2.8rem;margin:0 auto;}
+
+/*底部*/
+.bottom{width: 100%;height: 2rem; background: #fff;position: fixed;bottom: 0;border-top: 1px solid #dddddd;}
+.bottom p{float:left;color: #666666;padding-left: 0.2rem;line-height: 2rem;}
+.bottom p span{color: #ff6600;}
+.bottom a{float: right;display: block; color: #fff;padding:0.2rem 4.8rem;background: #ff6e0d;margin-top: 0.4rem;
+	margin-right: 0.2rem; border-radius: 0.08rem;}

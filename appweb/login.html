@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 解决uc浏览器字体变大的问题 -->
+	<meta name="wap-font-scale" content='no'>
+	<!-- 顶部状态条的颜色 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 网站开启对web app程序的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 手机号码不被显示为拨号链接 -->
+	<meta name="format-detection" content="telephone=no,address=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scale=no">
+	<title>会员登录-花礼网</title>
+	<meta name="keywords">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="favicon_white.ico">
+	<link rel="stylesheet" type="text/css" href="style/m_base.css">
+	<link rel="stylesheet" type="text/css" href="style/login.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {  
+			// 菜单导航 显示隐藏
+		    $(".menu").on("click",function(){
+			$(".top_nav").toggle();
+			});	
+			
+			// 使用会员账号登录
+			$("#member_login .tel_login").on("click",function(){
+				$("#tel_login").show();
+				$("#member_login").hide();
+			});
+
+			// 使用手机验证登录
+			$("#tel_login .member_login").on("click",function(){
+				$("#tel_login").hide();
+				$("#member_login").show();
+			});
+
+		});  
+	</script>
+
+</head>
+<body>
+	<header>会员登录<i class="iconfont arrow">&#xe63e;</i><i class="iconfont menu">&#xe603;</i></header>
+	<div class="main m_layout">
+		<!-- 显示隐藏导航 -->
+		<div class="top_nav">
+			<ul>
+				<li><a href="index.html"><img src="images/shouye.png"><p>首页</p></a></li>
+				<li><a href="category.html"><img src="images/icon3b.png"><p>分类搜索</p></a></li>
+				<li><a href="cart_empty.html"><img src="images/Shopping.png"><p>&nbsp;&nbsp;&nbsp;购物车</p></a></li>
+				<li><a href="my.html"><img src="images/my.png"><p>我的</p></a></li>
+			</ul>
+		</div>
+		<!-- 显示隐藏导航 end-->
+		
+		<!-- 使用会员账号登录 -->
+		<div id="member_login">
+			<a href="#" class="tel_login">使用手机验证登录</a>
+			<form>
+				<input type="text" name="" placeholder="请输入邮箱/手机号码">
+				<input type="text" name="" placeholder="请输入登录密码">
+				<input type="checkbox"  checked="checked">
+				<label>一个月内免登录</label>
+				<button type="post">登录</button>
+			</form>
+		</div>
+		
+		<!-- 使用手机验证登录 -->
+		<div id="tel_login">
+			<a href="#" class="member_login">使用会员账号登录</a>
+			<input type="text" name="" placeholder="请输入手机号码">
+			<input class="message" type="text" name="" placeholder="输入短信验证码">
+			<button type="get">获取验证码</button>
+			<button type="post">登录</button>
+		</div>
+		
+
+		<div class="server">
+			<a href="register.html" class="register">快速注册</a>
+			<a href="#" class="pwd_return">找回密码</a>
+		</div>
+		<div class="other_login">
+			<div class="top">
+				<div class="line"></div>
+				<p>其他登录方式</p>
+			</div>
+			<div class="down">
+				<a href="#"><img src="images/login_qq.png"><span>QQ</span></a>
+				<a href="#"><img src="images/login_zfb1.png"><span>支付宝</span></a>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
