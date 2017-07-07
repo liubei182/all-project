@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页-中国森田</title>
+<meta content="width=device-width, initial- scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport"/>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/iPad.css" rel="stylesheet" type="text/css" media="screen and (max-width:992px)">
+<link href="css/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:766px)">
+</head>
+
+<body>
+<!--头部开始-->
+<header>
+  <section class="top">
+    <div class="top01">
+      <h1><img src="images/logo.png"alt="中国森田标志" title="中国森田"></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="index_neiye1.html">新闻中心</a></li>
+          <li><a href="index_neiye2.html">关于我们</a></li>
+          <li><a href="index_neiye3.html">产业布局</a></li>
+          <li><a href="index_neiye4.html">企业文化</a></li>
+          <li><a href="index_neiye5.html">人力资源</a></li>
+          <li><a href="index_neiye6.html">社会责任</a></li>
+          <li><a href="index_neiye7.html">联系我们</a></li>
+        </ul>
+      </nav>
+      <div class="subnav"><img src="images/菜单.png"></div>
+      <div class="search"></div>
+    </div>
+  </section>
+  <div class="banner">
+    <div id="banner1">
+      <img src="images/banner1.jpg" class="current">
+      <img src="images/banner2.jpg">
+      <img src="images/banner3.jpg">
+      <img src="images/banner4.jpg">
+      <img src="images/banner5.jpg">
+    </div>
+    <div id="arrows">
+      <img src="images/arrow-left.png" style="padding:5px;">
+      <img src="images/arrow-right.png" style="float: right;padding:5px;">
+    </div>
+    <script type="text/javascript">
+      var os=document.getElementById("banner1").getElementsByTagName("img");
+      var arrows=document.getElementById("arrows").getElementsByTagName("img");
+      var cur_index=0;
+      var t=setInterval(move,2000);
+      function move(){
+        os[cur_index].className="";
+        cur_index++;
+        if (cur_index==os.length) {
+          cur_index=0;
+        }
+        os[cur_index].className="current";
+      }
+
+      for(var i=0;i<os.length;i++){
+         //鼠标进入时停止轮播
+        os[i].onmouseover=function(){
+          clearInterval(t);
+        }
+        //鼠标离开时继续轮播
+        os[i].onmouseout=function(){
+          t=setInterval(move,2000);
+        }
+      }
+      //左箭头控制轮播
+      arrows[0].onclick=function(){
+        os[cur_index].className="";
+        cur_index--;
+        if (cur_index==-1) {
+          cur_index=os.length-1;
+        }
+        os[cur_index].className="current";
+      }
+       //右箭头控制轮播
+      arrows[1].onclick=function(){
+        os[cur_index].className="";
+        cur_index++;
+        if (cur_index==os.length) {
+          cur_index=0;
+        }
+        os[cur_index].className="current";
+      }
+     
+    </script>
+    <div class="banner02">
+      <span>        
+        <img src="images/jt_left.gif">
+        <img src="images/jt_right.gif">
+      </span>
+  
+      <ul>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg01-1.png">
+            <p>森田资管</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg01.png">
+            <p>森田资管</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg02-1.png">
+            <p>森田能源</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg02.png">
+            <p>森田能源</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg03-1.png">
+            <p>森田投资</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg03.png">
+            <p>森田投资</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+        
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg04-1.png">
+            <p>森田影业</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg04.png">
+            <p>森田影业</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>     
+      </ul>
+     
+    </div>
+  </div>
+</header>
+<!--头部结束--> 
+<!--主题部分开始-->
+<div class="main">
+  <section class="main_about">
+    <p><img src="images/logo-01.gif"><a href="#">中国森田企业集团有限公司（中文简称：中国森田）是伴随中国改革开放而快速成长的综合性企业集团，成立于1985年，总部位于北京，全资持有森田能源、森田资管、森田投资、森田国贸、森田影业等多家专业集团和子公司，产业分布于华北、香港、澳大利亚、蒙古等地区和国家...</a></p>
+  </section>
+  <div class="main_title"><h2>关于我们&nbsp;&nbsp;<span>ABOUT US</span></h2></div>
+  <section class="main_about1"><img src="images/logo-01.gif">
+    <p><a href="#">中国森田企业集团有限公司（中文简称：中国森田）是伴随中国改革开放而快速成长的综合性企业集团，成立于1985年，总部位于北京，全资持有森田能源、森田资管、森田投资、森田国贸、森田影业等多家专业集团和子公司，产业分布于华北、香港、澳大利亚、蒙古等地区和国家...</a></p>
+  </section>
+  
+  <section class="main_news">
+  <div class="main_title"><h2>新闻中心&nbsp;&nbsp;<span>NEW&nbsp;CENTER</span></h2></div>
+    <div class="main_news_left">
+      <div class="main_news_left01"><img src="images/news01.gif"></div>
+      <div class="main_news_left02">
+        <h2>新闻中心<span>&nbsp;NEW&nbsp;CENTER</span></h2>
+        <ul>
+          <li><a href="#"><span>2017-01-26</span><span>【集团】</span>
+            <p>中国森田“不忘初心 砥砺前行”年终盛典圆满落幕</p>
+            </a></li>
+          <li><a href="#"><span>2017-01-26</span><span>【集团】</span>
+            <p>中国森田“不忘初心 砥砺前行”年终盛典圆满落幕</p>
+            </a></li>
+          <li><a href="#"><span>2017-01-26</span><span>【集团】</span>
+            <p>中国森田“不忘初心 砥砺前行”年终盛典圆满落幕</p>
+            </a></li>
+          <li><a href="#"><span>2017-01-26</span><span>【集团】</span>
+            <p>中国森田“不忘初心 砥砺前行”年终盛典圆满落幕</p>
+            </a></li>
+          <li><a href="#"><span>2017-01-26</span><span>【集团】</span>
+            <p>中国森田“不忘初心 砥砺前行”年终盛典圆满落幕</p>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_news_right">
+      <div class="main_news_right01"><a href="<h3></h3>"><img src="images/news02.gif"></a></div>
+      <div class="main_news_right02">
+        <h2>视频中心<span>VIDEO</span></h2>
+      </div>
+      <div class="main_news_right03"> <a class="jiantou_left" href="#"></a> <a class="jiantou_right" href="#"></a> </div>
+    </div>
+  </section>
+   <div class="main_title"><h2>关于我们&nbsp;&nbsp;<span>ABOUT US</span></h2></div>
+  <section class="main_sh">
+    <div><img src="images/sh_01.gif">
+      <p>社<br/>
+        会<br/>
+        责<br/>
+        任</p>
+    </div>
+    <ul>
+      <li><a href="#"><img src="images/sh_02 .gif" width="205" height="172"></a></li>
+      <li><a href="#"><img src="images/sh_03.gif" width="205" height="172"></a></li>
+      <li><a href="#"><img src="images/sh_04.gif" width="206" height="172"></a></li>
+      <li><a href="#"><img src="images/sh_05.gif"></a></li>
+    </ul>
+  </section>
+</div>
+<!--主题部分结束--> 
+<!--底部部分开始-->
+<footer>
+  <div class="footer_01">
+    <div class="footer01_left">
+      <dl>
+        <dt>新闻中心</dt>
+        <dd><a href="#">集团新闻</a></dd>
+        <dd><a href="#">行业资讯</a></dd>
+        <dd><a href="#">森田党建</a></dd>
+        <dd><a href="#">精彩视频</a></dd>
+        <dd><a href="#">森田智库</a></dd>
+      </dl>
+      <dl>
+        <dt>关于我们</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>产业布局</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>企业文化</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>人力资源</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>社会责任</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>联系我们</dt>
+        <dd><a href="#">联系方式</a></dd>
+      </dl>
+    </div>
+    <div class="footer01_right">
+      <div><img src="images/erweima01.gif">
+        <p>微信公众号</p>
+      </div>
+      <div><img src="images/erweima02.gif">
+        <p>新浪官微</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer_02">
+    <p class="footer_02_left">©&nbsp;中国森田企业集团有限公司&nbsp;版权所有&nbsp;京ICP备16010445号 <a href="#">企业邮箱</a> <a href="#">免责条款</a> <a href="#">隐私声明款</a></p>
+  </div>
+</footer>
+<!--底部结束-->
+</body>
+</html>

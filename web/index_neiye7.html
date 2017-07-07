@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联系我们-中国森田</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--头部开始-->
+<header>
+  <section class="top">
+    <div class="top01">
+      <h1><img src="images/logo.png" width="243" height="97" alt="中国森田标志" title="中国森田"></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="index_neiye1.html">新闻中心</a></li>
+          <li><a href="index_neiye2.html">关于我们</a></li>
+          <li><a href="index_neiye3.html">产业布局</a></li>
+          <li><a href="index_neiye4.html">企业文化</a></li>
+          <li><a href="index_neiye5.html">人力资源</a></li>
+          <li><a href="index_neiye6.html">社会责任</a></li>
+          <li><a href="index_neiye7.html">联系我们</a></li>
+        </ul>
+      </nav>
+      <div class="search"></div>
+    </div>
+  </section>
+  <div class="banner">
+   <div id="banner1">
+      <img src="images/banner1.jpg">
+      <img src="images/banner2.jpg">
+      <img src="images/banner3.jpg">
+      <img src="images/banner4.jpg">
+      <img src="images/banner5.jpg" class="current">
+    </div>
+    <div id="arrows">
+      <img src="images/arrow-left.png" style="padding:5px;">
+      <img src="images/arrow-right.png" style="float: right;padding:5px;">
+    </div>
+    <div class="banner02">
+       <span>        
+          <img src="images/jt_left.gif">
+          <img src="images/jt_right.gif">
+       </span>
+      <ul>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg01-1.png">
+            <p>森田资管</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg01.png">
+            <p>森田资管</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg02-1.png">
+            <p>森田能源</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg02.png">
+            <p>森田能源</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg03-1.png">
+            <p>森田投资</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg03.png">
+            <p>森田投资</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+        <li>
+          <div class="banner02_off"><a href="#"><img src="images/gg04-1.png">
+            <p>森田影业</p>
+            </a> </div>
+          <div class="banner02_on"> <a href="#"><img src="images/gg04.png">
+            <p>森田影业</p>
+            <p>了解更多</p>
+            </a> </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!--头部结束--> 
+<!--页内部分开始-->
+<div class="n_main_1">
+  <div class="n_main_left">
+    <h2>联系我们
+      <p>CONTACT US</p>
+    </h2>
+    <ul>
+      <!--<li><a href="#">社会责任</a></li>
+      <li><a href="#">慈善公益</a></li>
+      <li><a href="#">环境保护</a></li>-->
+    </ul>
+  </div>
+  <div class="n_main_right">
+    <div class="n_main_right_top"> <strong></strong>
+      <p>您当前所在的位置：<a href="#">首页&nbsp;</a>>>&nbsp;联系我们</p>
+    </div>
+    <div class="lxwm">
+      <ul>
+        <li>中国森田企业集团有限公司</li>
+        <li>地 址：中国·北京 东长安街1号</li>
+        <li>电 话：(86 10) 6521 8888</li>
+        <li>传 真：(86 10) 8518 7098</li>
+        <li>邮 编：100738</li>
+        <li>E-mail：stjt@SamGroup.cn</li>
+      </ul>
+     <!-- <img src="images/staticimage.png" width="530" height="340"> --></div>
+     <div id="wrap" class="my-map">
+		<div id="mapContainer"></div>
+	</div>
+	<script src="http://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+	<script>
+	!function(){
+		var infoWindow, map, level = 12,
+			center = {lng: 116.412323, lat: 39.918156},
+			features = [];
+
+		function loadFeatures(){
+			for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
+				data = features[i];
+				switch(data.type){
+					case "Marker":
+						feature = new AMap.Marker({ map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+							zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+							content: '<div class="icon icon-' + data.icon + ' icon-'+ data.icon +'-' + data.color +'"></div>' });
+						break;
+					case "Polyline":
+						for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+							path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+						}
+						feature = new AMap.Polyline({ map: map, path: path, extData: data, zIndex: 2,
+							strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity });
+						break;
+					case "Polygon":
+						for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+							path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+						}
+						feature = new AMap.Polygon({ map: map, path: path, extData: data, zIndex: 1,
+							strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+							fillColor: data.fillColor, fillOpacity: data.fillOpacity });
+						break;
+					default: feature = null;
+				}
+				if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
+			}
+		}
+
+		function mapFeatureClick(e){
+			if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
+			var extData = e.target.getExtData();
+			infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+			infoWindow.open(map, e.lnglat);
+		}
+
+		map = new AMap.Map("mapContainer", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+		
+		loadFeatures();
+
+		map.on('complete', function(){
+			map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function(){
+				map.addControl(new AMap.ToolBar);
+			map.addControl(new AMap.OverView({isOpen: true}));
+			map.addControl(new AMap.Scale);
+			});	
+		})
+		
+	}();
+	</script>
+  </div>
+</div>
+<!--页内部分结束--> 
+<!--底部部分开始-->
+<footer>
+  <div class="footer_01">
+    <div class="footer01_left">
+      <dl>
+        <dt>新闻中心</dt>
+        <dd><a href="#">集团新闻</a></dd>
+        <dd><a href="#">行业资讯</a></dd>
+        <dd><a href="#">森田党建</a></dd>
+        <dd><a href="#">精彩视频</a></dd>
+        <dd><a href="#">森田智库</a></dd>
+      </dl>
+      <dl>
+        <dt>关于我们</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>产业布局</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>企业文化</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>人力资源</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>社会责任</dt>
+        <dd><a href="#">集团简介</a></dd>
+        <dd><a href="#">品牌释义</a></dd>
+        <dd><a href="#">关联企业</a></dd>
+      </dl>
+      <dl>
+        <dt>联系我们</dt>
+        <dd><a href="#">联系方式</a></dd>
+      </dl>
+    </div>
+    <div class="footer01_right">
+      <div><img src="images/erweima01.gif">
+        <p>微信公众号</p>
+      </div>
+      <div><img src="images/erweima02.gif">
+        <p>新浪官微</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer_02">
+    <p class="footer_02_left">©&nbsp;中国森田企业集团有限公司&nbsp;版权所有&nbsp;京ICP备16010445号 <a href="#">企业邮箱</a> <a href="#">免责条款</a> <a href="#">隐私声明款</a></p>
+  </div>
+</footer>
+<!--底部结束-->
+</body>
+</html>

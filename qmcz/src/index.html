@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+<header>
+    <div class=" nav w">
+        <h1 class="h1">全民</h1><h1 class="h2">创造</h1>
+        <ul>
+            <li><a ui-sref="home">首页</a></li>
+            <li><a href="#">节目专栏</a></li>
+            <li><a href="#">圈子</a></li>
+        </ul>
+        <div class="search">
+            <img src="images/search.png">
+            <input type="text" placeholder="输入您想搜索的内容">
+        </div>
+        <div class="dlzc">
+            <div><a ui-sref="login"  class="login">登录</a><a ui-sref="register" class="register">注册</a></div>
+        </div>
+    </div>
+</header>
+<div ui-view></div>
+<footer>
+    <ul class="w">
+        <li><a href="#">关于全民创造</a></li>
+        <li>|</li>
+        <li><a href="#" class="now">全民创造用户协议</a></li>
+        <li>|</li>
+        <li><a href="#">全民创造风险提示议</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们议</a></li>
+    </ul>
+    <div class="r">
+        <h1 class="h1">全民</h1><h1 class="h2">创造</h1>
+        <span>©2015</span>
+    </div>
+</footer>
+</body>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller/controllers.js"></script>
+<script src="bootstrap/js/jquery-1.11.1.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</html>

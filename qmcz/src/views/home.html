@@ -1,0 +1,88 @@
+<div id="carousel-example-generic" class="carousel slide" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="{{$index}}"  ng-repeat="info in HomeData.slides"
+            ng-class="{'active':$index==0} "></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item"   ng-repeat="info in HomeData.slides" ng-class="{'active':$index==0}">
+            <img ng-src="{{info.img}}" alt="..." style="width: 100%;height: auto">
+        </div>
+    </div>
+     <!--Controls-->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--热门项目-->
+<div class="hot container">
+    <div class="hot_title">
+        <h4>热门项目 <a href="#">查看更多</a></h4>
+    </div>
+    <div class="hot_con">
+        <img ng-src="{{HomeData.hot[1].img}}" class="col-md-4">
+        <div class="hot_contxt col-md-6">
+            <h4>{{HomeData.hot[1].name}}</h4>
+            <h3>by{{HomeData.hot[1].fname}}</h3>
+            <p>{{HomeData.hot[1].desc}}</p>
+            <img src="images/gp.png">
+            <b class="lx">{{HotNav[HomeData.hot[1].id]}}</b>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/gp-2.png">
+            <b class="lx">卫视推荐</b>
+            <div class="jdt"><i style="width:{{HomeData.hot[1].sp}}% "></i></div>
+            <div class="jdt_con">
+                <b>{{HomeData.hot[1].sp}}%<br><b>进度</b></b>
+                <b>￥{{HomeData.hot[1].rprice}}<br><b>支持金额</b></b>
+                <b>{{HomeData.hot[1].rday}}<br><b>剩余天数</b></b>
+            </div>
+        </div>
+    </div>
+    <div class="hotnav col-md-2">
+        <div class="line"></div>
+        <ul ng-repeat="nav in HotNav">
+            <li><a href="#">{{nav}}</a></li>
+        </ul>
+    </div>
+</div>
+<!--卫视主推-->
+<div class="new container">
+    <div class="new_title">
+        <h4>卫视主推 <a href="#">查看全部</a></h4>
+    </div>
+    <div ng-repeat="newcon in HomeData.new" class="col-md-4">
+        <img ng-src="{{newcon.img}}" class="img-responsive">
+        <div class="linebox">
+            <div>
+                <h4>{{newcon.name}}</h4>
+                <h3>by{{newcon.fname}}</h3>
+                <p>{{newcon.desc}}</p>
+                <img src="images/gp.png">
+                <b class="lx">{{HotNav[newcon.id]}}</b>
+                <div class="jdt"><i style="width:{{newcon.sp}}% "></i></div>
+                <div class="jdt_con">
+                    <b>{{newcon.sp}}%<br><b>进度</b></b>
+                    <b>￥{{newcon.rprice}}<br><b>支持金额</b></b>
+                    <b>{{newcon.rday}}<br><b>剩余天数</b></b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--合作单位-->
+<div class="unit container">
+    <h4>合作单位</h4>
+    <ul ng-repeat="unitcon in HomeData.unit">
+        <li>
+            <img ng-src="{{unitcon.img}}" >
+            <!--<p>{{unitcon.name}}</p>-->
+        </li>
+    </ul>
+</div>

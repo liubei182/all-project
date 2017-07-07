@@ -1,0 +1,34 @@
+<form action="#" navalidate ng-controller="LoginController" name="myResForm" ng-model="myResForm" >
+    <h2>登录</h2>
+    <!--<input type="text" placeholder="请输入您的姓名" name="username" ng-model="username" required>-->
+    <!--<span ng-show="myResForm.username.$dirty && myResForm.username.$invalid">姓名不能为空！</span>-->
+    <!--myResForm.username.$dirty && myResForm.username.$invalid姓名必须输入-->
+    <input type="text" placeholder="请输入您的手机号" name="phone" ng-model="phone" required ng-pattern="/^1[3578][0-9]{9}$/">
+    <span ng-show="myResForm.phone.$dirty && myResForm.phone.$invalid">
+        <span ng-show="myResForm.phone.$error.required">手机号不能为空</span>
+        <span ng-show="myResForm.phone.$error.pattern">您输入的号码有误，请检查！</span>
+    </span>
+    <input type="password" placeholder="请输入密码，不小于6位" name="pwd1" ng-minlength="6" ng-model="pwd1" required>
+    <span ng-show="myResForm.pwd1.$dirty && myResForm.pwd1.$invalid">
+        <span ng-show="myResForm.pwd1.$error.required">密码不能为空！</span>
+        <span ng-show="myResForm.pwd1.$error.minlength">密码长度不能少于6位！</span>
+    </span>
+    <input type="password" placeholder="请确认密码" name="pwd2" ng-model="pwd2" required>
+    <span ng-show="myResForm.pwd2.$dirty && pwd1!=pwd2">两次输入的密码不一致！</span>
+    <span class="wjpwd">忘记密码？</span>
+    <input type="button" value="登录" ng-click="reg(myResForm.$valid && pwd1==pwd2 &&xy)"
+            ng-class="{'active':myResForm.$valid && pwd1==pwd2} ">
+    <label style="margin-left: 30px;" style="margin:0;"><input type="checkbox" ng-model="xy"><i>✓</i> 记住我</label>
+    <div class="logway" style="margin-bottom: 51px;">
+        <div class="title">
+            <div class="line1"></div>
+            <h3>第三方登录</h3>
+            <div class="line2"></div>
+        </div>
+        <img src="images/logway.png" style="margin-top:20px;">
+    </div>
+    <div class="bottom" >
+        <span>新用户？</span>
+        <a href="#">立即注册</a>
+    </div>
+</form>
